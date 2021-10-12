@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2021</copyright>
     <item>
-      <title>File: 2,
-             Errors: 99,
+      <title>File: 3,
+             Errors: 134,
              Warnings: 0,
              Infos: 0
       </title>
@@ -55,7 +55,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  6
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#ua.edu.sumdu.j2se.logvynskyy.tasks.ArrayTaskList.java">ua/edu/sumdu/j2se/logvynskyy/tasks/ArrayTaskList.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  36
                 </td>
               </tr>
                           <tr>

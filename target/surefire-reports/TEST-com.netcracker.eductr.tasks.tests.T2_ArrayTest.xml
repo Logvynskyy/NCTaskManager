@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.netcracker.eductr.tasks.tests.T2_ArrayTest" time="0.002" tests="1" errors="0" skipped="1" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.netcracker.eductr.tasks.tests.T2_ArrayTest" time="0.016" tests="4" errors="2" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
-    <property name="sun.java.command" value="C:\Users\shimo\AppData\Local\Temp\surefire14406878370186377896\surefirebooter14553574631483899116.jar C:\Users\shimo\AppData\Local\Temp\surefire14406878370186377896 2021-10-11T20-59-30_785-jvmRun1 surefire3717936649252294069tmp surefire_05708106990599217273tmp"/>
+    <property name="sun.java.command" value="C:\Users\shimo\AppData\Local\Temp\surefire14187642152201764106\surefirebooter5557979170086399463.jar C:\Users\shimo\AppData\Local\Temp\surefire14187642152201764106 2021-10-12T23-45-07_639-jvmRun1 surefire11752944805266853119tmp surefire_03478094723362127545tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\shimo\Desktop\NetCracker\NCTaskManager\target\test-classes;C:\Users\shimo\Desktop\NetCracker\NCTaskManager\target\classes;C:\Users\shimo\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\shimo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\shimo\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\shimo\AppData\Local\Temp\surefire14406878370186377896\surefirebooter14553574631483899116.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\shimo\AppData\Local\Temp\surefire14187642152201764106\surefirebooter5557979170086399463.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.8+10-LTS"/>
@@ -61,7 +61,50 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="" classname="com.netcracker.eductr.tasks.tests.T2_ArrayTest" time="0">
-    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  <testcase name="part1_testSizeAddGet" classname="com.netcracker.eductr.tasks.tests.T2_ArrayTest" time="0.001">
+    <system-out><![CDATA[15
+20
+25
+]]></system-out>
+  </testcase>
+  <testcase name="part2_testRemove" classname="com.netcracker.eductr.tasks.tests.T2_ArrayTest" time="0.003">
+    <failure message="ArrayTaskList.remove(D) не повинно бути істинним" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: ArrayTaskList.remove(D) не повинно бути істинним
+	at com.netcracker.eductr.tasks.tests.T2_ArrayTest.part2_testRemove(T2_ArrayTest.java:91)
+]]></failure>
+    <system-out><![CDATA[15
+20
+25
+30
+35
+]]></system-out>
+  </testcase>
+  <testcase name="part3_testIncomingInactive" classname="com.netcracker.eductr.tasks.tests.T2_ArrayTest" time="0.004">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+	at com.netcracker.eductr.tasks.tests.T2_ArrayTest.part3_testIncomingInactive(T2_ArrayTest.java:118)
+]]></error>
+    <system-out><![CDATA[15
+20
+25
+]]></system-out>
+  </testcase>
+  <testcase name="part4_testIncoming" classname="com.netcracker.eductr.tasks.tests.T2_ArrayTest" time="0.003">
+    <error type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+	at com.netcracker.eductr.tasks.tests.T2_ArrayTest.part4_testIncoming(T2_ArrayTest.java:152)
+]]></error>
+    <system-out><![CDATA[15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+]]></system-out>
   </testcase>
 </testsuite>

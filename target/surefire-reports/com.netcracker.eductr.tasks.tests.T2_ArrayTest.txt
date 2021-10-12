@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.netcracker.eductr.tasks.tests.T2_ArrayTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.002 s - in com.netcracker.eductr.tasks.tests.T2_ArrayTest
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in com.netcracker.eductr.tasks.tests.T2_ArrayTest
+com.netcracker.eductr.tasks.tests.T2_ArrayTest.part2_testRemove  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: ArrayTaskList.remove(D) не повинно бути істинним
+	at com.netcracker.eductr.tasks.tests.T2_ArrayTest.part2_testRemove(T2_ArrayTest.java:91)
+
+com.netcracker.eductr.tasks.tests.T2_ArrayTest.part3_testIncomingInactive  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.netcracker.eductr.tasks.tests.T2_ArrayTest.part3_testIncomingInactive(T2_ArrayTest.java:118)
+
+com.netcracker.eductr.tasks.tests.T2_ArrayTest.part4_testIncoming  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.netcracker.eductr.tasks.tests.T2_ArrayTest.part4_testIncoming(T2_ArrayTest.java:152)
+
