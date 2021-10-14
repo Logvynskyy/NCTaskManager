@@ -19,14 +19,14 @@ public class ArrayTaskList {
     public boolean remove(Task task){
         Task[] result = new Task[taskList.length - 1];
         for(int i = 0; i < taskList.length; i++){
-            if(taskList[i] == task){
+            if(taskList[i].equals(task)){
                 System.arraycopy(taskList, 0, result, 0, i);
                 System.arraycopy(taskList, i + 1, result, i, taskList.length - i - 1);
                 System.arraycopy(result, 0, taskList, 0, result.length);
-                break;
+                return true;
             }
         }
-        return !Arrays.equals(taskList, result);
+        return false;
     }
 
     public int size(){
