@@ -5,13 +5,12 @@ import java.util.*;
 public class ArrayTaskList {
 
     private int size = 10;
-    private Task[] taskList = new Task[10];
+    private Task[] taskList = new Task[size];
 
     public void add(Task task){
         if(emptySpaceCheck()){
             taskList = Arrays.copyOf(taskList, size + 5);
             size += 5;
-            System.out.println(taskList.length);
         }
         taskList[size()] = task;
     }
@@ -44,5 +43,16 @@ public class ArrayTaskList {
 
     private boolean emptySpaceCheck(){
         return taskList[size - 1] == null;
+    }
+
+    public ArrayTaskList incoming(int from, int to){
+        ArrayTaskList plannedTasks = new ArrayTaskList();
+        for(int i = 0; i < size(); i++){
+            Task task = getTask(i);
+            if(task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to){
+                plannedTasks.add(task);
+            }
+        }
+        return plannedTasks;
     }
 }
