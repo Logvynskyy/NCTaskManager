@@ -8,7 +8,7 @@ public class ArrayTaskList {
     private Task[] taskList = new Task[10];
 
     public void add(Task task){
-        if(!sizeCheck()){
+        if(emptySpaceCheck()){
             taskList = Arrays.copyOf(taskList, size + 5);
             size += 5;
             System.out.println(taskList.length);
@@ -42,7 +42,7 @@ public class ArrayTaskList {
         return taskList[index];
     }
 
-    private boolean sizeCheck(){
-        return taskList[size - 1] != null;
+    private boolean emptySpaceCheck(){
+        return taskList[size - 1] == null;
     }
 }
