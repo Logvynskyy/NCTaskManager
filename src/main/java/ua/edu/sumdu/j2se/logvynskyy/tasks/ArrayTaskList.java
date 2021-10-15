@@ -17,7 +17,7 @@ public class ArrayTaskList {
      * @param task - об'єкт класу Task, що потрібно додати до масиву taskList
      */
     public void add(Task task){
-        if(isLastEmpty()){
+        if(!isLastEmpty()){
             taskList = Arrays.copyOf(taskList, size + 5);
             size += 5;
         }
