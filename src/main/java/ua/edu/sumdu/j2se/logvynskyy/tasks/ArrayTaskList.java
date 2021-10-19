@@ -16,7 +16,8 @@ public class ArrayTaskList {
      * Метод додає задачу у кінець списку задач
      * @param task - об'єкт класу Task, що потрібно додати до масиву taskList
      */
-    public void add(Task task){
+    public void add(Task task) throws NullPointerException{
+        if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         if(!isLastEmpty()){
             taskList = Arrays.copyOf(taskList, size + 5);
             size += 5;
@@ -60,7 +61,8 @@ public class ArrayTaskList {
      * @param index - індекс елемента масиву, який потрібно повернути
      * @return - елемент масиву taskList за вказаним індексом
      */
-    public Task getTask(int index){
+    public Task getTask(int index) throws IndexOutOfBoundsException{
+        if(index >= taskList.length) throw new IndexOutOfBoundsException("Невірно заданий індекс!");
         return taskList[index];
     }
 

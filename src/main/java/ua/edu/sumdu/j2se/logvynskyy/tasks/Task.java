@@ -20,7 +20,9 @@ public class Task {
      * @param title - назва задачі
      * @param time - час виконання
      */
-    public Task(String title, int time) {
+    public Task(String title, int time) throws IllegalArgumentException{
+        if(time <= 0) throw new IllegalArgumentException("Час не може бути меншим нуля!");
+        if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
         this.time = time;
     }
@@ -32,7 +34,10 @@ public class Task {
      * @param end - час кінця виконання задачі
      * @param interval - інтервал повторень виконання задачі
      */
-    public Task(String title, int start, int end, int interval) {
+    public Task(String title, int start, int end, int interval) throws IllegalArgumentException{
+        if(interval <= 0) throw new IllegalArgumentException("Інтервал менший нуля!");
+        if(start <= 0 || end <= start) throw new IllegalArgumentException("Невірні параметри часу!");
+        if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
         this.start = start;
         this.end = end;
