@@ -30,7 +30,8 @@ public class ArrayTaskList {
      * @param task - об'єкт класу Task, що потрібно видалити з масиву taskList
      * @return - true, якщо задача task була у списку, інакше повертає false
      */
-    public boolean remove(Task task){
+    public boolean remove(Task task) throws NullPointerException{
+        if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         Task[] result = new Task[taskList.length - 1];
         for(int i = 0; i < taskList.length; i++){
             if(taskList[i].equals(task)){
@@ -76,7 +77,8 @@ public class ArrayTaskList {
      * @param to - кінцева дата відліку
      * @return - підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
      */
-    public ArrayTaskList incoming(int from, int to){
+    public ArrayTaskList incoming(int from, int to) throws IllegalArgumentException {
+        if(from < 0 && to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
         ArrayTaskList plannedTasks = new ArrayTaskList();
         for(int i = 0; i < size(); i++){
             Task task = getTask(i);
