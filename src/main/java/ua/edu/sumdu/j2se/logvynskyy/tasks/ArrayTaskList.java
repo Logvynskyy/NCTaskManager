@@ -7,7 +7,7 @@ import java.util.*;
  * @author Logvynskyy
  * @version 1.0
  */
-public class ArrayTaskList {
+public class ArrayTaskList extends AbstractTaskList{
 
     private int size = 10;
     private Task[] taskList = new Task[size];
@@ -17,6 +17,7 @@ public class ArrayTaskList {
      * @param task - об'єкт класу Task, що потрібно додати до масиву taskList
      * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
+    @Override
     public void add(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         if(!isLastEmpty()){
@@ -32,6 +33,7 @@ public class ArrayTaskList {
      * @return - true, якщо задача task була у списку, інакше повертає false
      * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
+    @Override
     public boolean remove(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         Task[] result = new Task[taskList.length - 1];
@@ -50,6 +52,7 @@ public class ArrayTaskList {
      * Метод повертає кількість задач у списку.
      * @return - кількість ненульових об'єктів масиву taskList
      */
+    @Override
     public int size(){
         int counter = 0;
         for (Task task : taskList){
@@ -65,6 +68,7 @@ public class ArrayTaskList {
      * @return - елемент масиву taskList за вказаним індексом
      * @throws IndexOutOfBoundsException якщо index виходить за межі розміру масиву
      */
+    @Override
     public Task getTask(int index) throws IndexOutOfBoundsException{
         if(index >= taskList.length) throw new IndexOutOfBoundsException("Невірно заданий індекс!");
         return taskList[index];

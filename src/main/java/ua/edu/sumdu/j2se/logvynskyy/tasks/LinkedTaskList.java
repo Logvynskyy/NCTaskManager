@@ -1,6 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
-public class LinkedTaskList {
+public class LinkedTaskList extends AbstractTaskList{
     private Node head;
     private Node last;
     private int size = 0;
@@ -28,6 +28,7 @@ public class LinkedTaskList {
      * @param task об'єкт класу Task, що потрібно додати до зв'язного списку
      * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
+    @Override
     public void add(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         Node node = new Node(task);
@@ -48,6 +49,7 @@ public class LinkedTaskList {
      * @return true, якщо задача task була у списку, інакше повертає false
      * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
+    @Override
     public boolean remove(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         Node prev = head;
@@ -81,6 +83,7 @@ public class LinkedTaskList {
      * Метод повертає кількість задач у списку.
      * @return кількість вузлів зв'язного списку
      */
+    @Override
     public int size(){
         return size;
     }
@@ -91,6 +94,7 @@ public class LinkedTaskList {
      * @return елемент зв'язного списку за вказаним індексом
      * @throws IndexOutOfBoundsException якщо index виходить за межі розміру списку
      */
+    @Override
     public Task getTask(int index) throws IndexOutOfBoundsException{
         if(index >= size()) throw new IndexOutOfBoundsException("Невірно заданий індекс!");
         Node temp = head;
