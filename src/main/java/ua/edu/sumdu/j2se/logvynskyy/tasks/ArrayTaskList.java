@@ -13,8 +13,9 @@ public class ArrayTaskList {
     private Task[] taskList = new Task[size];
 
     /**
-     * Метод додає задачу у кінець списку задач
+     * Метод додає задачу у кінець списку задач.
      * @param task - об'єкт класу Task, що потрібно додати до масиву taskList
+     * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
     public void add(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
@@ -26,9 +27,10 @@ public class ArrayTaskList {
     }
 
     /**
-     * Метод видаляє задачу зі списку задач та скорочує його розмір на 1
+     * Метод видаляє задачу зі списку задач та скорочує його розмір на 1.
      * @param task - об'єкт класу Task, що потрібно видалити з масиву taskList
      * @return - true, якщо задача task була у списку, інакше повертає false
+     * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
     public boolean remove(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
@@ -45,7 +47,7 @@ public class ArrayTaskList {
     }
 
     /**
-     * Метод повертає кількість задач у списку
+     * Метод повертає кількість задач у списку.
      * @return - кількість ненульових об'єктів масиву taskList
      */
     public int size(){
@@ -58,9 +60,10 @@ public class ArrayTaskList {
     }
 
     /**
-     * Метод повертає задачу, що стоїть на вказаному місці у списку
+     * Метод повертає задачу, що стоїть на вказаному місці у списку.
      * @param index - індекс елемента масиву, який потрібно повернути
      * @return - елемент масиву taskList за вказаним індексом
+     * @throws IndexOutOfBoundsException якщо index виходить за межі розміру масиву
      */
     public Task getTask(int index) throws IndexOutOfBoundsException{
         if(index >= taskList.length) throw new IndexOutOfBoundsException("Невірно заданий індекс!");
@@ -72,10 +75,11 @@ public class ArrayTaskList {
     }
 
     /**
-     * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку
+     * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
      * @param from - початкова дата відліку
      * @param to - кінцева дата відліку
      * @return - підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
+     * @throws IllegalArgumentException якщо параметр from менший нуля, або параметр to менший чи дорівнює параметру from
      */
     public ArrayTaskList incoming(int from, int to) throws IllegalArgumentException {
         if(from < 0 && to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
