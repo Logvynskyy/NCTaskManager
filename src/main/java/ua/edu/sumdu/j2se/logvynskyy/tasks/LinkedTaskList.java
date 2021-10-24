@@ -30,23 +30,29 @@ public class LinkedTaskList {
     }
 
     public boolean remove(Task task){
-        Node temp = head;
-        while(temp != null){
-            Node current = temp;
-            Node currentNext = current.next;
-            temp = currentNext;
-            if(head.value.equals(task)) {
-                head = head.next;
+        Node prev = head;
+        Node curr = head;
+        while(curr.next != null || curr == last){
+            if(curr.value.equals(task)){
+                if (size == 1){
+                    head = null;
+                    last = null;
+                }
+                else if(curr.equals(head)){ // remove first element
+                    head = head.next;
+                }
+                else if(curr.equals(last)){  // remove last element
+                    last = prev;
+                    last.next = null;
+                }
+                else { // remove element
+                    prev.next = curr.next;
+                }
                 size--;
                 return true;
             }
-            if(currentNext != null && currentNext.value.equals(task)){
-                if(currentNext.next != null)
-                    current.next = currentNext.next;
-                else current.next = null;
-                size--;
-                return true;
-            }
+            prev = curr;
+            curr = prev.next;
         }
         return false;
     }
