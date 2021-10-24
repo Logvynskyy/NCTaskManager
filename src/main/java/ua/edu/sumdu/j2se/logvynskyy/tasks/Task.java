@@ -20,7 +20,9 @@ public class Task {
      * @param title - назва задачі
      * @param time - час виконання
      */
-    public Task(String title, int time) {
+    public Task(String title, int time) throws IllegalArgumentException{
+        if(time < 0) throw new IllegalArgumentException("Час не може бути меншим нуля!");
+        if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
         this.time = time;
     }
@@ -32,7 +34,10 @@ public class Task {
      * @param end - час кінця виконання задачі
      * @param interval - інтервал повторень виконання задачі
      */
-    public Task(String title, int start, int end, int interval) {
+    public Task(String title, int start, int end, int interval) throws IllegalArgumentException{
+        if(interval <= 0) throw new IllegalArgumentException("Інтервал менший нуля!");
+        if(start < 0 || end <= start) throw new IllegalArgumentException("Невірні параметри часу!");
+        if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
         this.start = start;
         this.end = end;
@@ -43,7 +48,8 @@ public class Task {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(String title) throws IllegalArgumentException{
+        if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
     }
 
@@ -76,7 +82,8 @@ public class Task {
      * Змінює час виконання неповторюваної задачі. Якщо задача повторювана, метод перетворює її на неповторювану
      * @param time - новий час виконання задачі.
      */
-    public void setTime(int time) {
+    public void setTime(int time) throws IllegalArgumentException{
+        if(time < 0) throw new IllegalArgumentException("Час не може бути меншим нуля!");
         if(isRepeated()){
             this.interval = 0;
             this.start = 0;
@@ -91,7 +98,9 @@ public class Task {
      * @param end - час кінця виконання задачі
      * @param interval - інтервал виконання задачі
      */
-    public void setTime(int start, int end, int interval){
+    public void setTime(int start, int end, int interval) throws IllegalArgumentException{
+        if(interval <= 0) throw new IllegalArgumentException("Інтервал менший нуля!");
+        if(start < 0 || end <= start) throw new IllegalArgumentException("Невірні параметри часу!");
         if(!isRepeated()){
             this.start = start;
             this.end = end;
@@ -138,7 +147,8 @@ public class Task {
      * @param current - вказаний поточний час
      * @return - Якщо виконуються умови, повертається наступний час виконання задачі, інакше повертається -1
      */
-    public int nextTimeAfter(int current){
+    public int nextTimeAfter(int current) throws IllegalArgumentException {
+        if(current < 0) throw new IllegalArgumentException("Поточний час не може бути меншим нуля!");
         if(current >= getEndTime() || !isActive()) return -1;
         if(current < getStartTime()) return getStartTime();
         else{
