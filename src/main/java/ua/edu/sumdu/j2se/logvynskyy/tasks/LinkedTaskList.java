@@ -11,41 +11,39 @@ class Node{
 
 public class LinkedTaskList {
 
-    Node first;
-    Node last;
+    Node head;
+//    Node last;
 
-//    public LinkedTaskList() {
-//        first = null;
-//    }
+    private int size = 0;
 
     public void add(Task task) {
         Node node = new Node(task);
-
-        if (first == null) {
-            first = node;
-        } else {
-            if (last != null) {
-                last.next = node;
-            } else {
-                first = node;
-            }
+        if(head == null){
+            head = node;
         }
-        last = node;
-        last.next = null;
+        else {
+            getLastElem().next = node;
+        }
+//        getLastElem().next = null;
+        size++;
     }
 
     public boolean remove(Task task){
-        Node x = first;
-        while (x != null){
-            Node current = x;
+        Node temp = head;
+        while(temp != null){
+            Node current = temp;
             Node currentNext = current.next;
-            x = currentNext;
-            if(currentNext != null && currentNext.value.equals(task)){
-                current.next = currentNext.next;
+            temp = currentNext;
+            if(head.value.equals(task)) {
+                head = head.next;
+                size--;
                 return true;
             }
-            if(first.value.equals(task)){
-                first = first.next;
+            if(currentNext != null && currentNext.value.equals(task)){
+                if(currentNext.next != null)
+                    current.next = currentNext.next;
+                else current.next = null;
+                size--;
                 return true;
             }
         }
@@ -53,21 +51,23 @@ public class LinkedTaskList {
     }
 
     public int size(){
-        Node current = first;
-        int count = 0;
-        while(current != null) {
-            count++;
-            current = current.next;
-        }
-        return count;
+        return size;
     }
 
     public Task getTask(int index){
-        Node temp = first;
+        Node temp = head;
         for(int i = 0; i < index; i++){
             temp = temp.next;
         }
         return temp.value;
+    }
+
+    private Node getLastElem(){
+        Node curr = head;
+        while (curr != null){
+            curr = curr.next;
+        }
+        return curr;
     }
 
     public LinkedTaskList incoming(int from, int to) throws IllegalArgumentException {
