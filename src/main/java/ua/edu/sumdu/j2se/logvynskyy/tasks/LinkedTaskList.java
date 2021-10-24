@@ -12,19 +12,20 @@ class Node{
 public class LinkedTaskList {
 
     Node head;
-//    Node last;
+    Node last;
 
     private int size = 0;
 
     public void add(Task task) {
         Node node = new Node(task);
-        if(head == null){
+        if(isEmpty()){
             head = node;
+            last = head;
         }
         else {
-            getLastElem().next = node;
+            last.next = node;
+            last = node;
         }
-//        getLastElem().next = null;
         size++;
     }
 
@@ -62,12 +63,8 @@ public class LinkedTaskList {
         return temp.value;
     }
 
-    private Node getLastElem(){
-        Node curr = head;
-        while (curr != null){
-            curr = curr.next;
-        }
-        return curr;
+    private boolean isEmpty(){
+        return size == 0;
     }
 
     public LinkedTaskList incoming(int from, int to) throws IllegalArgumentException {
