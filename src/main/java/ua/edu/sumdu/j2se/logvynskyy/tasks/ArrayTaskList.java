@@ -96,4 +96,9 @@ public class ArrayTaskList extends AbstractTaskList{
         }
         return plannedTasks;
     }
+
+//    public ArrayTaskList incoming(int from, int to){
+//        TaskListFactory.createTaskList(ListTypes.types.ARRAY);
+//        return super.incoming(from, to);
+//    }
 }
