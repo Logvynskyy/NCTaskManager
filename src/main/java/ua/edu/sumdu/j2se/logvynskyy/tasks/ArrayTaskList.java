@@ -77,28 +77,4 @@ public class ArrayTaskList extends AbstractTaskList{
     private boolean isLastEmpty(){
         return taskList[size - 1] == null;
     }
-
-    /**
-     * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
-     * @param from - початкова дата відліку
-     * @param to - кінцева дата відліку
-     * @return - підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
-     * @throws IllegalArgumentException якщо параметр from менший нуля, або параметр to менший чи дорівнює параметру from
-     */
-    public ArrayTaskList incoming(int from, int to) throws IllegalArgumentException {
-        if(from < 0 && to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
-        ArrayTaskList plannedTasks = new ArrayTaskList();
-        for(int i = 0; i < size(); i++){
-            Task task = getTask(i);
-            if(task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to){
-                plannedTasks.add(task);
-            }
-        }
-        return plannedTasks;
-    }
-
-//    public ArrayTaskList incoming(int from, int to){
-//        TaskListFactory.createTaskList(ListTypes.types.ARRAY);
-//        return super.incoming(from, to);
-//    }
 }

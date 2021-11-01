@@ -107,23 +107,4 @@ public class LinkedTaskList extends AbstractTaskList{
     private boolean isEmpty(){
         return size == 0;
     }
-
-    /**
-     * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
-     * @param from початкова дата відліку
-     * @param to кінцева дата відліку
-     * @return підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
-     * @throws IllegalArgumentException якщо параметр from менший нуля, або параметр to менший чи дорівнює параметру from
-     */
-    public LinkedTaskList incoming(int from, int to) throws IllegalArgumentException {
-        if(from < 0 && to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
-        LinkedTaskList plannedTasks = new LinkedTaskList();
-        for(int i = 0; i < size(); i++){
-            Task task = getTask(i);
-            if(task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to){
-                plannedTasks.add(task);
-            }
-        }
-        return plannedTasks;
-    }
 }
