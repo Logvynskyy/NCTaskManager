@@ -7,7 +7,7 @@ import java.util.*;
  * @author Logvynskyy
  * @version 1.0
  */
-public class ArrayTaskList {
+public class ArrayTaskList extends AbstractTaskList{
 
     private int size = 10;
     private Task[] taskList = new Task[size];
@@ -17,6 +17,7 @@ public class ArrayTaskList {
      * @param task - об'єкт класу Task, що потрібно додати до масиву taskList
      * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
+    @Override
     public void add(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         if(!isLastEmpty()){
@@ -32,6 +33,7 @@ public class ArrayTaskList {
      * @return - true, якщо задача task була у списку, інакше повертає false
      * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
+    @Override
     public boolean remove(Task task) throws NullPointerException{
         if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
         Task[] result = new Task[taskList.length - 1];
@@ -50,6 +52,7 @@ public class ArrayTaskList {
      * Метод повертає кількість задач у списку.
      * @return - кількість ненульових об'єктів масиву taskList
      */
+    @Override
     public int size(){
         int counter = 0;
         for (Task task : taskList){
@@ -65,31 +68,22 @@ public class ArrayTaskList {
      * @return - елемент масиву taskList за вказаним індексом
      * @throws IndexOutOfBoundsException якщо index виходить за межі розміру масиву
      */
+    @Override
     public Task getTask(int index) throws IndexOutOfBoundsException{
         if(index >= taskList.length) throw new IndexOutOfBoundsException("Невірно заданий індекс!");
         return taskList[index];
     }
 
-    private boolean isLastEmpty(){
-        return taskList[size - 1] == null;
+    /**
+     * Метод повертає тип колекції для зберігання інформації
+     * @return enum-тип, що відноситься до конкретного класу
+     */
+    @Override
+    public ListTypes.types getInstance() {
+        return ListTypes.types.ARRAY;
     }
 
-    /**
-     * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
-     * @param from - початкова дата відліку
-     * @param to - кінцева дата відліку
-     * @return - підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
-     * @throws IllegalArgumentException якщо параметр from менший нуля, або параметр to менший чи дорівнює параметру from
-     */
-    public ArrayTaskList incoming(int from, int to) throws IllegalArgumentException {
-        if(from < 0 && to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
-        ArrayTaskList plannedTasks = new ArrayTaskList();
-        for(int i = 0; i < size(); i++){
-            Task task = getTask(i);
-            if(task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to){
-                plannedTasks.add(task);
-            }
-        }
-        return plannedTasks;
+    private boolean isLastEmpty(){
+        return taskList[size - 1] == null;
     }
 }
