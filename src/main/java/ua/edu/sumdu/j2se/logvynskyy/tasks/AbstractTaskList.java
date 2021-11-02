@@ -5,6 +5,7 @@ abstract class AbstractTaskList {
     public abstract boolean remove(Task task);
     public abstract int size();
     public abstract Task getTask(int index);
+    public abstract ListTypes.types getInstance();
 
     /**
      * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
@@ -16,8 +17,7 @@ abstract class AbstractTaskList {
     public AbstractTaskList incoming(int from, int to) throws IllegalArgumentException{
         if(from < 0 || to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
 
-        ListTypes.types type = (this instanceof LinkedTaskList) ? ListTypes.types.LINKED : ListTypes.types.ARRAY;
-        AbstractTaskList plannedTasks = TaskListFactory.createTaskList(type);
+        AbstractTaskList plannedTasks = TaskListFactory.createTaskList(getInstance());
         for(int i = 0; i < size(); i++){
             Task task = getTask(i);
             if(task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to){

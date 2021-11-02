@@ -104,6 +104,15 @@ public class LinkedTaskList extends AbstractTaskList{
         return temp.value;
     }
 
+    /**
+     * Метод повертає тип колекції для зберігання інформації
+     * @return enum-тип, що відноситься до конкретного класу
+     */
+    @Override
+    public ListTypes.types getInstance() {
+        return ListTypes.types.LINKED;
+    }
+
     private boolean isEmpty(){
         return size == 0;
     }

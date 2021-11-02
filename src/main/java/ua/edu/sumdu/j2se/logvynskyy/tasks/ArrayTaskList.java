@@ -74,6 +74,15 @@ public class ArrayTaskList extends AbstractTaskList{
         return taskList[index];
     }
 
+    /**
+     * Метод повертає тип колекції для зберігання інформації
+     * @return enum-тип, що відноситься до конкретного класу
+     */
+    @Override
+    public ListTypes.types getInstance() {
+        return ListTypes.types.ARRAY;
+    }
+
     private boolean isLastEmpty(){
         return taskList[size - 1] == null;
     }
