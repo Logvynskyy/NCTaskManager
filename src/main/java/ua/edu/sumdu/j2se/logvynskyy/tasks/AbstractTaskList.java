@@ -2,7 +2,7 @@ package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
 import java.util.*;
 
-public abstract class AbstractTaskList implements Iterable<Task>{
+public abstract class AbstractTaskList implements Iterable<Task> {
 
     public abstract void add(Task task);
     public abstract boolean remove(Task task);
@@ -29,6 +29,7 @@ public abstract class AbstractTaskList implements Iterable<Task>{
         }
         return plannedTasks;
     }
+
     @Override
     public Iterator<Task> iterator() {
         return new Iter();

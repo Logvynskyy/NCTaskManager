@@ -7,7 +7,7 @@ import java.util.*;
  * @author Logvynskyy
  * @version 1.0
  */
-public class Task {
+public class Task implements Cloneable{
 
     private String title;
     private int time;
@@ -173,5 +173,29 @@ public class Task {
     @Override
     public int hashCode() {
         return Objects.hash(title, time, start, end, interval, isActive);
+    }
+
+    @Override
+    public Task clone() throws CloneNotSupportedException {
+        return (Task) super.clone();
+    }
+
+    @Override
+    public String toString() {
+        if(!isRepeated())
+            return "Task{" +
+                    "title = '" + title + '\'' +
+                    ", isRepeated = " + isRepeated() +
+                    ", time = " + time +
+                    '}';
+        else
+            return "Task{" +
+                    "title='" + title + '\'' +
+                    ", isRepeated = " + isRepeated() +
+                    ", start = " + start +
+                    ", end = " + end +
+                    ", interval = " + interval +
+                    ", isActive = " + isActive +
+                    '}';
     }
 }

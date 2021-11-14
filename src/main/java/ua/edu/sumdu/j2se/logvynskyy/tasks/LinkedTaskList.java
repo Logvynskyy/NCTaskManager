@@ -2,7 +2,7 @@ package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
 import java.util.*;
 
-public class LinkedTaskList extends AbstractTaskList{
+public class LinkedTaskList extends AbstractTaskList implements Cloneable{
     private Node head;
     private Node last;
     private int size = 0;
@@ -155,5 +155,21 @@ public class LinkedTaskList extends AbstractTaskList{
     @Override
     public int hashCode() {
         return Objects.hash(head, last, size);
+    }
+
+    @Override
+    public LinkedTaskList clone() throws CloneNotSupportedException {
+        return (LinkedTaskList) super.clone();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("LinkedTaskList{");
+        for(int i = 0; i < size(); i++){
+            sb.append(getTask(i).toString()).append(", ");
+        }
+        sb.delete(sb.lastIndexOf(","), sb.lastIndexOf(" ") + 1);
+        sb.append("}");
+        return sb.toString();
     }
 }
