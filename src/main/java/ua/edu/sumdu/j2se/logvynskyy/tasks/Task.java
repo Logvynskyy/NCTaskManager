@@ -1,11 +1,12 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
+import java.util.*;
+
 /**
  * Клас Task з описом властивостей задачі
  * @author Logvynskyy
  * @version 1.0
  */
-
 public class Task {
 
     private String title;
@@ -159,5 +160,18 @@ public class Task {
             if(tmpTime < getEndTime()) return tmpTime;
             else return -1;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Task)) return false;
+        Task task = (Task) o;
+        return time == task.time && start == task.start && end == task.end && interval == task.interval && isActive == task.isActive && title.equals(task.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, time, start, end, interval, isActive);
     }
 }

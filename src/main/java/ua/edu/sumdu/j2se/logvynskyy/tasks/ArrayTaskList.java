@@ -86,4 +86,22 @@ public class ArrayTaskList extends AbstractTaskList{
     private boolean isLastEmpty(){
         return taskList[size - 1] == null;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ArrayTaskList)) return false;
+        ArrayTaskList that = (ArrayTaskList) o;
+        for(int i = 0; i < size(); i++){
+            if(!getTask(i).equals(that.getTask(i))) return false;
+        }
+        return size == that.size;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(size);
+        result = 31 * result + Arrays.hashCode(taskList);
+        return result;
+    }
 }

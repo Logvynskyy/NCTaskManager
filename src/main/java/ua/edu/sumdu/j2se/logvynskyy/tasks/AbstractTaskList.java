@@ -1,6 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
-import java.util.Iterator;
+import java.util.*;
 
 public abstract class AbstractTaskList implements Iterable<Task>{
 

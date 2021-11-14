@@ -1,6 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
-import java.util.Iterator;
+import java.util.*;
 
 public class LinkedTaskList extends AbstractTaskList{
     private Node head;
@@ -139,5 +139,21 @@ public class LinkedTaskList extends AbstractTaskList{
 
     private boolean isEmpty(){
         return size == 0;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof LinkedTaskList)) return false;
+        LinkedTaskList tasks = (LinkedTaskList) o;
+        for(int i = 0; i < size(); i++){
+            if(!getTask(i).equals(tasks.getTask(i))) return false;
+        }
+        return size == tasks.size;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(head, last, size);
     }
 }
