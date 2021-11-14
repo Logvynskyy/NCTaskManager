@@ -1,5 +1,7 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
+import java.util.Iterator;
+
 public class LinkedTaskList extends AbstractTaskList{
     private Node head;
     private Node last;
@@ -111,6 +113,28 @@ public class LinkedTaskList extends AbstractTaskList{
     @Override
     public ListTypes.types getInstance() {
         return ListTypes.types.LINKED;
+    }
+
+    private class Iter implements Iterator<Task>{
+        int index = 0;
+        Node lastUsedNode = new Node(null);
+
+        public Iter() {
+            this.lastUsedNode.next = head;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return index < size();
+        }
+
+        @Override
+        public Task next() throws IndexOutOfBoundsException{
+            lastUsedNode = lastUsedNode.next;
+            Task next = lastUsedNode.value;
+            index++;
+            return next;
+        }
     }
 
     private boolean isEmpty(){

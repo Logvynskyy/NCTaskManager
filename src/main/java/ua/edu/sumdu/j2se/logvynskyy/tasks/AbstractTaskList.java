@@ -1,10 +1,8 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
-import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 
 public abstract class AbstractTaskList implements Iterable<Task>{
-    private int modCount = 0;
 
     public abstract void add(Task task);
     public abstract boolean remove(Task task);
@@ -31,21 +29,18 @@ public abstract class AbstractTaskList implements Iterable<Task>{
         }
         return plannedTasks;
     }
-
     @Override
     public Iterator<Task> iterator() {
-        modCount++;
         return new Iter();
     }
 
     private class Iter implements Iterator<Task>{
         int index = 0;
         int lastUsed = -1;
-        int expectedModCount = modCount;
 
         @Override
         public boolean hasNext() {
-            return index == size();
+            return index < size();
         }
 
         @Override
@@ -65,12 +60,6 @@ public abstract class AbstractTaskList implements Iterable<Task>{
             if (lastUsed < index)
                 index--;
             lastUsed = -1;
-            expectedModCount = modCount;
-        }
-
-        final void checkForComodification() {
-            if (modCount != expectedModCount)
-                throw new ConcurrentModificationException();
         }
     }
 }
