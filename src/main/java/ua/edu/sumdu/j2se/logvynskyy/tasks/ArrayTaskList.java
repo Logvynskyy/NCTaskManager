@@ -91,17 +91,20 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof ArrayTaskList)) return false;
+
         ArrayTaskList that = (ArrayTaskList) o;
         for(int i = 0; i < size(); i++){
             if(!getTask(i).equals(that.getTask(i))) return false;
         }
-        return size == that.size;
+        return size() == that.size();
     }
 
     @Override
     public int hashCode() {
-        int result = Objects.hash(size);
-        result = 31 * result + Arrays.hashCode(taskList);
+        int result = 1;
+        for(int i = 0; i < size(); i++){
+            result = 31 * result + getTask(i).hashCode();
+        }
         return result;
     }
 
