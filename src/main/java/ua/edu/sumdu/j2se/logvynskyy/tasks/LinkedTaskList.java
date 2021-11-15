@@ -154,7 +154,11 @@ public class LinkedTaskList extends AbstractTaskList implements Cloneable{
 
     @Override
     public int hashCode() {
-        return Objects.hash(head, last, size);
+        int result = 1;
+        for(int i = 0; i < size(); i++){
+            result = 31 * result + getTask(i).hashCode();
+        }
+        return result;
     }
 
     @Override
