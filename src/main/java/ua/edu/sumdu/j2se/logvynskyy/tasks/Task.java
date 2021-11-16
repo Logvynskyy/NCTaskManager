@@ -1,12 +1,13 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
+import java.util.*;
+
 /**
  * Клас Task з описом властивостей задачі
  * @author Logvynskyy
  * @version 1.0
  */
-
-public class Task {
+public class Task implements Cloneable{
 
     private String title;
     private int time;
@@ -159,5 +160,45 @@ public class Task {
             if(tmpTime < getEndTime()) return tmpTime;
             else return -1;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Task)) return false;
+        Task task = (Task) o;
+        if(!isRepeated())
+            return time == task.time && title.equals(task.title) && isActive == task.isActive;
+        else
+            return start == task.start && end == task.end && interval == task.interval && isActive == task.isActive && title.equals(task.title);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, time, start, end, interval, isActive);
+    }
+
+    @Override
+    public Task clone() throws CloneNotSupportedException {
+        return (Task) super.clone();
+    }
+
+    @Override
+    public String toString() {
+        if(!isRepeated())
+            return "Task{" +
+                    "title = '" + title + '\'' +
+                    ", isRepeated = " + isRepeated() +
+                    ", time = " + time +
+                    '}';
+        else
+            return "Task{" +
+                    "title='" + title + '\'' +
+                    ", isRepeated = " + isRepeated() +
+                    ", start = " + start +
+                    ", end = " + end +
+                    ", interval = " + interval +
+                    ", isActive = " + isActive +
+                    '}';
     }
 }

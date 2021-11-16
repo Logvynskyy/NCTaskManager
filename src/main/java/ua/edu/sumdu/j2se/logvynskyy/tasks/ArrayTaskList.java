@@ -7,7 +7,7 @@ import java.util.*;
  * @author Logvynskyy
  * @version 1.0
  */
-public class ArrayTaskList extends AbstractTaskList{
+public class ArrayTaskList extends AbstractTaskList implements Cloneable{
 
     private int size = 10;
     private Task[] taskList = new Task[size];
@@ -85,5 +85,46 @@ public class ArrayTaskList extends AbstractTaskList{
 
     private boolean isLastEmpty(){
         return taskList[size - 1] == null;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ArrayTaskList)) return false;
+
+        ArrayTaskList that = (ArrayTaskList) o;
+        for(int i = 0; i < size(); i++){
+            if(!getTask(i).equals(that.getTask(i))) return false;
+        }
+        return size() == that.size();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 1;
+        for(int i = 0; i < size(); i++){
+            result = 31 * result + getTask(i).hashCode();
+        }
+        return result;
+    }
+
+    @Override
+    public ArrayTaskList clone() throws CloneNotSupportedException {
+        ArrayTaskList cloned = (ArrayTaskList) super.clone();
+        cloned.taskList = taskList.clone();
+        return cloned;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("ArrayTaskList{size = ");
+        sb.append(size()).append(", taskList = [");
+        for(int i = 0; i < size; i++){
+            if(getTask(i) != null)
+                sb.append(getTask(i).toString()).append(", ");
+        }
+        sb.delete(sb.lastIndexOf(","), sb.lastIndexOf(" ") + 1);
+        sb.append("]");
+        return sb.toString();
     }
 }

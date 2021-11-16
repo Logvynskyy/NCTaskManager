@@ -1,6 +1,8 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
-public class LinkedTaskList extends AbstractTaskList{
+import java.util.*;
+
+public class LinkedTaskList extends AbstractTaskList implements Cloneable{
     private Node head;
     private Node last;
     private int size = 0;
@@ -113,7 +115,65 @@ public class LinkedTaskList extends AbstractTaskList{
         return ListTypes.types.LINKED;
     }
 
+    private class Iter implements Iterator<Task>{
+        int index = 0;
+        Node lastUsedNode = new Node(null);
+
+        public Iter() {
+            this.lastUsedNode.next = head;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return index < size();
+        }
+
+        @Override
+        public Task next() throws IndexOutOfBoundsException{
+            lastUsedNode = lastUsedNode.next;
+            Task next = lastUsedNode.value;
+            index++;
+            return next;
+        }
+    }
+
     private boolean isEmpty(){
         return size == 0;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof LinkedTaskList)) return false;
+        LinkedTaskList tasks = (LinkedTaskList) o;
+        for(int i = 0; i < size(); i++){
+            if(!getTask(i).equals(tasks.getTask(i))) return false;
+        }
+        return size == tasks.size;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 1;
+        for(int i = 0; i < size(); i++){
+            result = 31 * result + getTask(i).hashCode();
+        }
+        return result;
+    }
+
+    @Override
+    public LinkedTaskList clone() throws CloneNotSupportedException {
+        return (LinkedTaskList) super.clone();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("LinkedTaskList{");
+        for(int i = 0; i < size(); i++){
+            sb.append(getTask(i).toString()).append(", ");
+        }
+        sb.delete(sb.lastIndexOf(","), sb.lastIndexOf(" ") + 1);
+        sb.append("}");
+        return sb.toString();
     }
 }
