@@ -1,6 +1,8 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
 import java.util.*;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 public class LinkedTaskList extends AbstractTaskList implements Cloneable{
     private Node head;
@@ -113,6 +115,11 @@ public class LinkedTaskList extends AbstractTaskList implements Cloneable{
     @Override
     public ListTypes.types getInstance() {
         return ListTypes.types.LINKED;
+    }
+
+    @Override
+    public Stream<Task> getStream() {
+        return StreamSupport.stream(super.spliterator(), false);
     }
 
     private class Iter implements Iterator<Task>{

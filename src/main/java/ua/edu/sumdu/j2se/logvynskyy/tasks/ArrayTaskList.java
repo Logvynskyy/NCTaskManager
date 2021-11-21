@@ -1,6 +1,8 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
 import java.util.*;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 /**
  * Клас ArrayTaskList, що створює список задач taskList типу Task та має методи, що дозволяють працювати з ним.
@@ -81,6 +83,11 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
     @Override
     public ListTypes.types getInstance() {
         return ListTypes.types.ARRAY;
+    }
+
+    @Override
+    public Stream<Task> getStream() {
+        return StreamSupport.stream(Spliterators.spliterator(taskList, 0, size(), 0), false);
     }
 
     private boolean isLastEmpty(){
