@@ -23,13 +23,8 @@ public abstract class AbstractTaskList implements Iterable<Task> {
         if(from < 0 || to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
 
         AbstractTaskList plannedTasks = TaskListFactory.createTaskList(getInstance());
-//        IntStream.range(0, size())
-//                .mapToObj(this::getTask)
-//                .distinct()
-//                .filter(task -> task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to)
-//                .forEach(plannedTasks::add);
-
-        getStream().distinct()
+        this.getStream()
+                .distinct()
                 .filter(task -> task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to)
                 .forEach(plannedTasks::add);
         return plannedTasks;

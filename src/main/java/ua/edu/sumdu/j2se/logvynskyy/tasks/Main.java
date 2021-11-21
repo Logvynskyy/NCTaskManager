@@ -1,8 +1,5 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-
 public class Main {
 
 	public static void main(String[] args) {
