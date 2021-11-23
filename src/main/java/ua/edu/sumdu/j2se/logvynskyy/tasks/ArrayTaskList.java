@@ -112,7 +112,7 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
         for(int i = 0; i < size(); i++){
             result = 31 * result + getTask(i).hashCode();
         }
-        return result;
+        return 31 * result + Objects.hashCode(size());
     }
 
     @Override
