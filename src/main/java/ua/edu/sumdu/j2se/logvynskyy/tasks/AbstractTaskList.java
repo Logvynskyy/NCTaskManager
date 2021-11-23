@@ -1,6 +1,7 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
 import java.util.*;
+import java.util.stream.*;
 
 public abstract class AbstractTaskList implements Iterable<Task> {
 
@@ -9,6 +10,7 @@ public abstract class AbstractTaskList implements Iterable<Task> {
     public abstract int size();
     public abstract Task getTask(int index);
     public abstract ListTypes.types getInstance();
+    public abstract Stream<Task> getStream();
 
     /**
      * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
@@ -17,16 +19,14 @@ public abstract class AbstractTaskList implements Iterable<Task> {
      * @return підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
      * @throws IllegalArgumentException якщо параметр from менший нуля, або параметр to менший чи дорівнює параметру from
      */
-    public AbstractTaskList incoming(int from, int to) throws IllegalArgumentException{
+    public final AbstractTaskList incoming(int from, int to) throws IllegalArgumentException{
         if(from < 0 || to <= from) throw new IllegalArgumentException("Невірні параметри часу!");
 
         AbstractTaskList plannedTasks = TaskListFactory.createTaskList(getInstance());
-        for(int i = 0; i < size(); i++){
-            Task task = getTask(i);
-            if(task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to){
-                plannedTasks.add(task);
-            }
-        }
+        this.getStream()
+                .distinct()
+                .filter(task -> task.nextTimeAfter(from) != -1 && task.nextTimeAfter(from) < to)
+                .forEach(plannedTasks::add);
         return plannedTasks;
     }
 
