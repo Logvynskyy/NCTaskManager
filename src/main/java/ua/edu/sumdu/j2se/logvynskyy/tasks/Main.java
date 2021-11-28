@@ -6,12 +6,19 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Hello");
-		AbstractTaskList list = new ArrayTaskList();
+		ArrayTaskList list = new ArrayTaskList();
 		LocalDateTime now = LocalDateTime.now();
-		Task task = new Task("some", now.plusSeconds(10), now.plusSeconds(100), 20);
-		task.setActive(true);
-		System.out.println(task.getStartTime());
+
+		list.add(new Task("dsad", now));
+		list.add(new Task("aaaa", now.plusSeconds(10)));
+		list.add(new Task("bbbb", now.plusSeconds(30)));
+		System.out.println(list.incoming(now, now.plusSeconds(100)));
+		System.out.println(Tasks.incoming(list, now, now.plusSeconds(100)));
+//		Task task = new Task("some", now.plusSeconds(10), now.plusSeconds(100), 20);
+//		task.setActive(true);
+//		System.out.println(task.getStartTime());
 //		System.out.println(task.getEndTime());
-		System.out.println(task.nextTimeAfter(now.plusSeconds(30)));
+//		System.out.println(task.nextTimeAfter(now.plusSeconds(30)));
+//		System.out.println(list instanceof Iterable);
 	}
 }
