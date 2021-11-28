@@ -87,7 +87,7 @@ public class Task implements Cloneable{
      * @param time - новий час виконання задачі.
      */
     public void setTime(LocalDateTime time) throws IllegalArgumentException{
-//        if(time.isBefore(LocalDateTime.now())) throw new IllegalArgumentException("Час не може бути меншим нуля!");
+//        if(time.isBefore(LocalDateTime.now().minusDays(1))) throw new IllegalArgumentException("Час не може бути меншим нуля!");
         if(isRepeated()){
             this.interval = 0;
             this.start = null;
@@ -154,14 +154,18 @@ public class Task implements Cloneable{
      */
     public LocalDateTime nextTimeAfter(LocalDateTime current) throws IllegalArgumentException {
 //        if(current.isBefore(LocalDateTime.now())) throw new IllegalArgumentException("Поточний час не може бути меншим нуля!");
-        if(current.isAfter(getEndTime()) || !isActive()) return null;
-        if(current.isBefore(getStartTime())) return getStartTime();
+        if(!current.isBefore(getEndTime()) || !isActive()) return null;
+        if(!current.isAfter(getStartTime())) return getStartTime();
         else{
+//            System.out.println(current);
             LocalDateTime tmpTime = getStartTime().plusSeconds(interval);
-            while(tmpTime.isBefore(current)){
+//            System.out.println(tmpTime);
+            while (!tmpTime.isAfter(current)) {
                 tmpTime = tmpTime.plusSeconds(interval);
+//                System.out.println(tmpTime);
             }
-            if(tmpTime.isBefore(getEndTime())) return tmpTime;
+//            if(tmpTime == current) tmpTime = tmpTime.plusSeconds(interval);
+            if (tmpTime.isBefore(getEndTime())) return tmpTime;
             else return null;
         }
     }

@@ -1,14 +1,17 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
+import java.time.LocalDateTime;
+
 public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Hello");
 		AbstractTaskList list = new ArrayTaskList();
-//		list.add(new Task("A", 10));
-//		list.add(new Task("B", 20));
-//		list.add(new Task("C", 30));
-//		list.add(new Task("D", 10, 40, 10));
-//		System.out.println(list.incoming(0, 25));
+		LocalDateTime now = LocalDateTime.now();
+		Task task = new Task("some", now.plusSeconds(10), now.plusSeconds(100), 20);
+		task.setActive(true);
+		System.out.println(task.getStartTime());
+//		System.out.println(task.getEndTime());
+		System.out.println(task.nextTimeAfter(now.plusSeconds(30)));
 	}
 }
