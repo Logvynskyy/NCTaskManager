@@ -13,23 +13,23 @@ public abstract class AbstractTaskList implements Iterable<Task> {
     public abstract ListTypes.types getInstance();
     public abstract Stream<Task> getStream();
 
-    /**
-     * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
-     * @param from початкова дата відліку
-     * @param to кінцева дата відліку
-     * @return підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
-     * @throws IllegalArgumentException якщо параметр from менший нуля, або параметр to менший чи дорівнює параметру from
-     */
-    public final AbstractTaskList incoming(LocalDateTime from, LocalDateTime to) throws IllegalArgumentException{
-        if(to.isBefore(from)) throw new IllegalArgumentException("Невірні параметри часу!");
-
-        AbstractTaskList plannedTasks = TaskListFactory.createTaskList(getInstance());
-        this.getStream()
-                .distinct()
-                .filter(task -> task.nextTimeAfter(from) != null && task.nextTimeAfter(from).isBefore(to))
-                .forEach(plannedTasks::add);
-        return plannedTasks;
-    }
+//    /**
+//     * Метод для створення списку задач, які будуть виконані хоч раз у вказаному часовому проміжку.
+//     * @param from початкова дата відліку
+//     * @param to кінцева дата відліку
+//     * @return підмножину задач, які заплановані на виконання хоча б раз після часу from і не пізніше ніж to
+//     * @throws IllegalArgumentException якщо параметр from менший нуля, або параметр to менший чи дорівнює параметру from
+//     */
+//    public final AbstractTaskList incoming(LocalDateTime from, LocalDateTime to) throws IllegalArgumentException{
+//        if(to.isBefore(from)) throw new IllegalArgumentException("Невірні параметри часу!");
+//
+//        AbstractTaskList plannedTasks = TaskListFactory.createTaskList(getInstance());
+//        this.getStream()
+//                .distinct()
+//                .filter(task -> task.nextTimeAfter(from) != null && task.nextTimeAfter(from).isBefore(to))
+//                .forEach(plannedTasks::add);
+//        return plannedTasks;
+//    }
 
     @Override
     public Iterator<Task> iterator() {
