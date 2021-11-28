@@ -153,19 +153,14 @@ public class Task implements Cloneable{
      * @return - Якщо виконуються умови, повертається наступний час виконання задачі, інакше повертається -1
      */
     public LocalDateTime nextTimeAfter(LocalDateTime current) throws IllegalArgumentException {
-//        if(current.isBefore(LocalDateTime.now())) throw new IllegalArgumentException("Поточний час не може бути меншим нуля!");
-        if(!current.isBefore(getEndTime()) || !isActive()) return null;
-        if(!current.isAfter(getStartTime())) return getStartTime();
+        if(!isActive() || current.compareTo(getEndTime()) >= 0) return null;
+        if(current.isBefore(getStartTime())) return getStartTime();
         else{
-//            System.out.println(current);
             LocalDateTime tmpTime = getStartTime().plusSeconds(interval);
-//            System.out.println(tmpTime);
             while (!tmpTime.isAfter(current)) {
                 tmpTime = tmpTime.plusSeconds(interval);
-//                System.out.println(tmpTime);
             }
-//            if(tmpTime == current) tmpTime = tmpTime.plusSeconds(interval);
-            if (tmpTime.isBefore(getEndTime())) return tmpTime;
+            if (!tmpTime.isAfter(getEndTime())) return tmpTime;
             else return null;
         }
     }
