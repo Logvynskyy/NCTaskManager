@@ -15,4 +15,17 @@ public class Tasks {
                 .forEach(plannedTasks::add);
         return plannedTasks;
     }
+
+    public static SortedMap<Date, Set<Task>> calendar(Iterable<Task> tasks, LocalDateTime start, LocalDateTime end)
+            throws IllegalArgumentException {
+        if(end.isBefore(start)) throw new IllegalArgumentException("Невірні параметри часу!");
+
+        SortedMap<Date, Set<Task>> calendar = new TreeMap<>();
+        Iterable<Task> incomingTasks = incoming(tasks, start, end);
+
+
+
+
+        return calendar;
+    }
 }
