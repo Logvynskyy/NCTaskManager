@@ -40,7 +40,6 @@ public class Task implements Cloneable{
         if(interval <= 0) throw new IllegalArgumentException("Інтервал менший нуля!");
         if(start == null || end == null) throw new IllegalArgumentException("Невірні параметри часу!");
         if(end.isBefore(start)) throw new IllegalArgumentException("Час закінчення не може бути раніше часу початку!");
-//        if(start < 0 || end <= start) throw new IllegalArgumentException("Невірні параметри часу!");
         if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
         this.start = start;
@@ -87,7 +86,6 @@ public class Task implements Cloneable{
      * @param time - новий час виконання задачі.
      */
     public void setTime(LocalDateTime time) throws IllegalArgumentException{
-//        if(time.isBefore(LocalDateTime.now().minusDays(1))) throw new IllegalArgumentException("Час не може бути меншим нуля!");
         if(isRepeated()){
             this.interval = 0;
             this.start = null;
