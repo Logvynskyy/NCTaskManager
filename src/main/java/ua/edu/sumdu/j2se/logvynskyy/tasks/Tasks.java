@@ -23,22 +23,10 @@ public class Tasks {
         if(end.isBefore(start)) throw new IllegalArgumentException("Невірні параметри часу!");
 
         SortedMap<LocalDateTime, Set<Task>> calendar = new TreeMap<>();
-
-        Iterable<Task> incomingTasks = () -> StreamSupport.stream(tasks.spliterator(), false)
-                .distinct()
-                .filter(t -> t.nextTimeAfter(start) != null && (t.nextTimeAfter(start).isBefore(end)))
-                .iterator();
+        Iterable<Task> incomingTasks = incoming(tasks, start, end);
 
         for (Task incomingTask : incomingTasks) {
             LocalDateTime nextTaskDate = incomingTask.nextTimeAfter(start);
-//            Set<Task> taskSet = new HashSet<>();
-//            calendar.put(nextTaskDate, taskSet);
-//            for (Task task : incomingTasks) {
-//                if(calendar.containsKey(task.nextTimeAfter(start))) {
-//                    taskSet.add(task);
-//                }
-//            }
-//            calendar.get(nextTaskDate).addAll(taskSet);
             while (!nextTaskDate.isAfter(end)) {
                 if (calendar.containsKey(nextTaskDate))
                     calendar.get(nextTaskDate).add(incomingTask);
