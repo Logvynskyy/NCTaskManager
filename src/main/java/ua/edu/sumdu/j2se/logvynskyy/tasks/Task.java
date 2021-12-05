@@ -1,5 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
+import java.io.Serializable;
 import java.util.*;
 import java.time.*;
 
@@ -8,7 +9,7 @@ import java.time.*;
  * @author Logvynskyy
  * @version 1.0
  */
-public class Task implements Cloneable{
+public class Task implements Cloneable, Serializable {
 
     private String title;
     private LocalDateTime time;

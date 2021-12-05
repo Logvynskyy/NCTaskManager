@@ -1,9 +1,10 @@
 package ua.edu.sumdu.j2se.logvynskyy.tasks;
 
+import java.io.Serializable;
 import java.util.*;
 import java.util.stream.*;
 
-public abstract class AbstractTaskList implements Iterable<Task> {
+public abstract class AbstractTaskList implements Iterable<Task>, Serializable {
 
     public abstract void add(Task task);
     public abstract boolean remove(Task task);
@@ -11,6 +12,7 @@ public abstract class AbstractTaskList implements Iterable<Task> {
     public abstract Task getTask(int index);
     public abstract ListTypes.types getInstance();
     public abstract Stream<Task> getStream();
+
 
     @Override
     public Iterator<Task> iterator() {
