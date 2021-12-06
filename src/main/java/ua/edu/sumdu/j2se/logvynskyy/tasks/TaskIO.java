@@ -74,16 +74,9 @@ public class TaskIO {
         gsonBuilder.setPrettyPrinting();
         Gson gson = gsonBuilder.create();
 
-        try(BufferedWriter writer = new BufferedWriter(out)){
-            writer.write(gson.toJson(tasks.getStream()
-                    .toArray(Task[]::new)));
-//            writer.write("{\"tasksArray\":[");
-//            for(int i = 0; i < tasks.size(); i++){
-//                writer.write(gson.toJson(tasks.getTask(i)));
-//                if(i != tasks.size() - 1)
-//                    writer.write(",");
-//            }
-//            writer.write("]}");
+        try {
+            out.write(gson.toJson(tasks.getStream().toArray(Task[]::new)));
+            out.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -91,27 +84,26 @@ public class TaskIO {
 
     public static void read(AbstractTaskList tasks, Reader in){
         Gson gson = new Gson();
-        try(BufferedReader reader = new BufferedReader(in)){
-//            int size = gson.fromJson(reader, int.class);
-//            for(int i = 0; i < size; i++){
-//                Task task = gson.fromJson(in, Task.class);
-//                tasks.add(task);
-//            }
-//            reader.read();
-            Task[] taskArray;
-            taskArray = gson.fromJson(reader, Task[].class);
-            Arrays.stream(taskArray).forEach(tasks::add);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Task[] taskArray = gson.fromJson(in, Task[].class);
+        Arrays.stream(taskArray).forEach(tasks::add);
     }
 
     public static void writeText(AbstractTaskList tasks, File file){
-
+        try(FileWriter fw = new FileWriter(file)) {
+            write(tasks, fw);
+        }
+        catch(Exception ex){
+            ex.printStackTrace();
+        }
     }
 
     public static void readText(AbstractTaskList tasks, File file){
-
+        try(FileReader fr = new FileReader(file)) {
+            read(tasks, fr);
+        }
+        catch(Exception ex){
+            ex.printStackTrace();
+        }
     }
 }
