@@ -36,38 +36,22 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
      * @throws NullPointerException якщо задача є пустою та дорівнює null
      */
     @Override
-    public boolean remove(Task t) {
-        for (int index = 0; index < size; index++) {
-            String title = taskList[index].getTitle();
+    public boolean remove(Task t) throws NullPointerException{
+        if(t == null) throw new NullPointerException("Задача не повинна бути пустою!");
+        for (int i = 0; i < size; i++) {
+            String title = taskList[i].getTitle();
             if (title != null && title.equals(t.getTitle())) {
-                shuffle(index);
+                if (i + 1 < size) {
+                    while (++i < size) {
+                        taskList[i - 1] = taskList[i];
+                    }
+                }
+                taskList[--size] = null;
                 return true;
             }
         }
         return false;
     }
-
-    private void shuffle(int index) {
-        if (index + 1 < size) {
-            while (++index < size) {
-                taskList[index - 1] = taskList[index];
-            }
-        }
-        taskList[--size] = null;
-    }
-//    public boolean remove(Task task) throws NullPointerException{
-//        if(task == null) throw new NullPointerException("Задача не повинна бути пустою!");
-//        Task[] result = new Task[taskList.length - 1];
-//        for(int i = 0; i < taskList.length; i++){
-//            if(taskList[i].equals(task)){
-//                System.arraycopy(taskList, 0, result, 0, i);
-//                System.arraycopy(taskList, i + 1, result, i, taskList.length - i - 1);
-//                System.arraycopy(result, 0, taskList, 0, result.length);
-//                return true;
-//            }
-//        }
-//        return false;
-//    }
 
     /**
      * Метод повертає кількість задач у списку.
