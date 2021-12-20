@@ -1,4 +1,6 @@
-package ua.edu.sumdu.j2se.logvynskyy.tasks;
+package ua.edu.sumdu.j2se.logvynskyy.model.utils;
+
+import ua.edu.sumdu.j2se.logvynskyy.model.entities.Task;
 
 import java.time.LocalDateTime;
 import java.util.*;

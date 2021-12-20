@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.logvynskyy.tasks;
+package ua.edu.sumdu.j2se.logvynskyy.model.entities;
 
 import java.io.Serializable;
 import java.util.*;
@@ -142,7 +142,7 @@ public class Task implements Cloneable, Serializable {
      * Задача вважається неповторюваною якщо інтервал її виконання дорівнює 0
      * @return - повторювана задача чи ні
      */
-    boolean isRepeated(){
+    public boolean isRepeated(){
         return interval != 0;
     }
 

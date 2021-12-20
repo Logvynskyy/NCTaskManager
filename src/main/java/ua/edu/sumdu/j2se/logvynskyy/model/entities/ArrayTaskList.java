@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.logvynskyy.tasks;
+package ua.edu.sumdu.j2se.logvynskyy.model.entities;
 
 import java.util.*;
 import java.util.stream.Stream;
