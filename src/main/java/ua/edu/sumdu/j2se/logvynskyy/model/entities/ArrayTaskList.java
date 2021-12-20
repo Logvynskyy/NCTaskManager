@@ -1,5 +1,7 @@
 package ua.edu.sumdu.j2se.logvynskyy.model.entities;
 
+import ua.edu.sumdu.j2se.logvynskyy.model.utils.ListTypes;
+
 import java.util.*;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;

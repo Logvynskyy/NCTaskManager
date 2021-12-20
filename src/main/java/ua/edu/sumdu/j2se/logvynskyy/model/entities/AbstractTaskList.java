@@ -1,11 +1,12 @@
 package ua.edu.sumdu.j2se.logvynskyy.model.entities;
 
+import ua.edu.sumdu.j2se.logvynskyy.model.utils.ListTypes;
+
 import java.io.Serializable;
 import java.util.*;
 import java.util.stream.*;
 
 public abstract class AbstractTaskList implements Iterable<Task>, Serializable {
-
     public abstract void add(Task task);
     public abstract boolean remove(Task task);
     public abstract int size();

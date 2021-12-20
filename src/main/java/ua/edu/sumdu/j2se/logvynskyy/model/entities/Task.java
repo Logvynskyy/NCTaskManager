@@ -24,7 +24,7 @@ public class Task implements Cloneable, Serializable {
      * @param time - час виконання
      */
     public Task(String title, LocalDateTime time) throws IllegalArgumentException{
-        if(time == null || time.isBefore(LocalDateTime.now().minusDays(1))) throw new IllegalArgumentException("Час не може бути меншим нуля!");
+        if(time == null) throw new IllegalArgumentException("Час не може бути меншим нуля!");
         if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
         this.time = time;
