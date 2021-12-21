@@ -1,7 +1,11 @@
 package ua.edu.sumdu.j2se.logvynskyy.model.entities;
 
+import ua.edu.sumdu.j2se.logvynskyy.controller.Menu;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.ListTypes;
+import ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.*;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
@@ -15,6 +19,20 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
 
     private int size = 10;
     private Task[] taskList = new Task[size];
+
+    private static ArrayTaskList tasks = new ArrayTaskList();
+
+    private ArrayTaskList() {}
+
+    public static ArrayTaskList getList() {
+        try {
+            tasks = new ArrayTaskList();
+            TaskIO.read(tasks, new FileReader("data.json"));
+        } catch (FileNotFoundException e) {
+            System.out.println("Не знайдено файлу з завданнями");
+        }
+        return tasks;
+    }
 
     /**
      * Метод додає задачу у кінець списку задач.

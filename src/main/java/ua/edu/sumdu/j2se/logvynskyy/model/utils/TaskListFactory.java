@@ -9,7 +9,7 @@ public class TaskListFactory {
         AbstractTaskList classType = null;
         switch(type){
             case ARRAY:
-                classType = new ArrayTaskList();
+//                classType = new ArrayTaskList();
                 break;
             case LINKED:
                 classType = new LinkedTaskList();

@@ -12,7 +12,7 @@ public class Menu {
     private Menu() {}
 
     public static Menu getMenu() {
-        if (menu ==null) {
+        if (menu == null) {
             menu = new Menu();
         }
         return menu;
