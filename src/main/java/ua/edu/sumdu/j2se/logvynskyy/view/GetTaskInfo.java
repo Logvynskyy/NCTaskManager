@@ -19,7 +19,7 @@ public class GetTaskInfo {
     }
 
     public boolean isActive(){
-        System.out.print("Чи активною буде задача (1 - так, 0 - ні): ");
+        System.out.print("Чи активною буде задача (1 - так, все інше - ні): ");
         return scanner.nextInt() == 1;
     }
 

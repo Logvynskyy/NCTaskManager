@@ -1,5 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.controller;
 
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.logvynskyy.model.*;
 
 import java.util.HashMap;
@@ -7,6 +8,7 @@ import java.util.Map;
 
 public class Menu {
 
+    private static final Logger logger = Logger.getLogger(Menu.class);
     private static Menu menu = new Menu();
 
     private Menu() {}
@@ -15,6 +17,7 @@ public class Menu {
         if (menu == null) {
             menu = new Menu();
         }
+        logger.info("Menu requested");
         return menu;
     }
 
@@ -30,6 +33,7 @@ public class Menu {
     }
 
     public Action getAction(int number) {
+        logger.info("Returned an action - " + actions.get(number).getClass().getSimpleName());
         return actions.get(number);
     }
 }

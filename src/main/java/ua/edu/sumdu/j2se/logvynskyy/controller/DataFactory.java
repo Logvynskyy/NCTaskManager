@@ -1,5 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.controller;
 
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.Task;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType;
 import ua.edu.sumdu.j2se.logvynskyy.view.GetTaskInfo;
@@ -7,6 +8,8 @@ import ua.edu.sumdu.j2se.logvynskyy.view.GetTaskInfo;
 import java.time.LocalDateTime;
 
 public class DataFactory {
+    private static final Logger logger = Logger.getLogger(DataFactory.class);
+
     public static Object getData(DataType type) {
         GetTaskInfo info = new GetTaskInfo();
         Object data = null;
@@ -46,8 +49,11 @@ public class DataFactory {
                 data = task;
                 break;
         }
-        if(data == null)
+        if(data == null){
+            logger.error("Requested data type that doesn't exist");
             throw new ClassCastException();
+        }
+        logger.info("Returned requested data type - " + type.name());
         return data;
     }
 }

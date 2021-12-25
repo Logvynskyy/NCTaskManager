@@ -1,5 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.model.entities;
 
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.logvynskyy.controller.Menu;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.ListTypes;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO;
@@ -17,6 +18,7 @@ import java.util.stream.StreamSupport;
  */
 public class ArrayTaskList extends AbstractTaskList implements Cloneable{
 
+    private static final Logger logger = Logger.getLogger(ArrayTaskList.class);
     private int size = 10;
     private Task[] taskList = new Task[size];
 
@@ -29,8 +31,10 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
             tasks = new ArrayTaskList();
             TaskIO.read(tasks, new FileReader("data.json"));
         } catch (FileNotFoundException e) {
+            logger.error(e.getMessage());
             System.out.println("Не знайдено файлу з завданнями");
         }
+        logger.info("Returned an array of tasks");
         return tasks;
     }
 
