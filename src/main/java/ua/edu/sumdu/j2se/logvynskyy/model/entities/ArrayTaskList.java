@@ -147,14 +147,14 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder("ArrayTaskList{size = ");
-        sb.append(size()).append(", taskList = [");
+        StringBuilder sb = new StringBuilder("Ваш список завдань має ");
+        sb.append(size()).append(" задач: ");
         for(int i = 0; i < size; i++){
             if(getTask(i) != null)
                 sb.append(getTask(i).toString()).append(", ");
         }
         sb.delete(sb.lastIndexOf(","), sb.lastIndexOf(" ") + 1);
-        sb.append("]");
+//        sb.append("]");
         return sb.toString();
     }
 }

@@ -188,19 +188,16 @@ public class Task implements Cloneable, Serializable {
     @Override
     public String toString() {
         if(!isRepeated())
-            return "Task{" +
-                    "title = '" + title + '\'' +
-                    ", isRepeated = " + isRepeated() +
-                    ", time = " + time.toString() +
-                    '}';
+            return "Назва - '" + title + '\'' +
+                    ", неповторювана" +
+                    ", час виконання - " + time.toString() +
+                    ", чи активна - " + isActive;
         else
-            return "Task{" +
-                    "title='" + title + '\'' +
-                    ", isRepeated = " + isRepeated() +
-                    ", start = " + start.toString() +
-                    ", end = " + end.toString() +
-                    ", interval = " + interval +
-                    ", isActive = " + isActive +
-                    '}';
+            return "Назва - " + title + '\'' +
+                    ", повторювана " +
+                    ", час початку - " + start.toString() +
+                    ", час закінчення - " + end.toString() +
+                    ", інтервал - " + interval +
+                    ", чи активна - " + isActive;
     }
 }

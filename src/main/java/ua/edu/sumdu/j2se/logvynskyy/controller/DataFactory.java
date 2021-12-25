@@ -7,7 +7,7 @@ import ua.edu.sumdu.j2se.logvynskyy.view.GetTaskInfo;
 import java.time.LocalDateTime;
 
 public class DataFactory {
-    public static Object getData(DataType type){
+    public static Object getData(DataType type) {
         GetTaskInfo info = new GetTaskInfo();
         Object data = null;
         switch (type){
@@ -46,6 +46,8 @@ public class DataFactory {
                 data = task;
                 break;
         }
+        if(data == null)
+            throw new ClassCastException();
         return data;
     }
 }
