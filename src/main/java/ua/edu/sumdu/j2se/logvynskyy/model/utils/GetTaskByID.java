@@ -5,16 +5,21 @@ import ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.Task;
 
-public class GetTaskByName {
-    private static final Logger logger = Logger.getLogger(GetTaskByName.class);
+import java.util.Arrays;
+import java.util.List;
 
-    public static Task getTask(String name) throws ClassNotFoundException {
+public class GetTaskByID {
+    private static final Logger logger = Logger.getLogger(GetTaskByID.class);
+
+    public static Task getTask(int id) throws ClassNotFoundException {
         AbstractTaskList list = ArrayTaskList.getList();
-        Task task = null;
-        for(Task t : list){
-            if(t.getTitle().equals(name))
-                task = t;
-        }
+
+        List<Object> list1 = Arrays.asList(list.getStream().toArray());
+//        for(Task t : list){
+//            if(t.getTitle().equals(id))
+//                task = t;
+//        }
+        Task task = list.getTask(id);
         if(task == null) {
             logger.error("Task with given title doesn't exist");
             throw new ClassNotFoundException();

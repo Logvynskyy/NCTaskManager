@@ -99,7 +99,7 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
      */
     @Override
     public Task getTask(int index) throws IndexOutOfBoundsException{
-        if(index >= taskList.length) throw new IndexOutOfBoundsException("Невірно заданий індекс!");
+        if(index >= taskList.length || index < 0) throw new IndexOutOfBoundsException("Невірно заданий індекс!");
         return taskList[index];
     }
 
@@ -152,12 +152,12 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Ваш список завдань має ");
-        sb.append(size()).append(" задач: ");
+        sb.append(size()).append(" задач:");
         for(int i = 0; i < size; i++){
             if(getTask(i) != null)
-                sb.append(getTask(i).toString()).append(", ");
+                sb.append('\n').append(i + 1 + " - ").append(getTask(i).toString());
         }
-        sb.delete(sb.lastIndexOf(","), sb.lastIndexOf(" ") + 1);
+//        sb.delete(sb.lastIndexOf(","), sb.lastIndexOf(" ") + 1);
 //        sb.append("]");
         return sb.toString();
     }

@@ -9,32 +9,37 @@ public class GetTaskInfo {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
 
     public String getTitle(){
-        System.out.print("Введіть назву задачі: ");
+        System.out.print("Введіть назву завдання: ");
         return scanner.next();
     }
 
     public boolean isRepeated(){
-        System.out.print("Чи повторювана буде задача (1 - так, 0 - ні): ");
+        System.out.print("Чи повторюване буде завдання (1 - так, 0 - ні): ");
         return scanner.nextInt() == 1;
     }
 
     public boolean isActive(){
-        System.out.print("Чи активною буде задача (1 - так, все інше - ні): ");
+        System.out.print("Чи активним буде завдання (1 - так, все інше - ні): ");
         return scanner.nextInt() == 1;
     }
 
     public LocalDateTime getStartTime(){
-        System.out.print("Введіть час початку виконання задачі у форматі [yyyy-MM-dd'T'HH:mm]: ");
+        System.out.print("Введіть час початку виконання завдання у форматі [yyyy-MM-dd'T'HH:mm]: ");
         return LocalDateTime.parse(scanner.next(), formatter);
     }
 
     public LocalDateTime getEndTime(){
-        System.out.print("Введіть час кінця виконання задачі у форматі [yyyy-MM-dd'T'HH:mm]: ");
+        System.out.print("Введіть час кінця виконання завдання у форматі [yyyy-MM-dd'T'HH:mm]: ");
         return LocalDateTime.parse(scanner.next(), formatter);
     }
 
     public int getInterval(){
-        System.out.print("Введіть інтервал виконання задачі у секундах: ");
+        System.out.print("Введіть інтервал виконання завдання у секундах: ");
+        return scanner.nextInt();
+    }
+
+    public int getID(){
+        System.out.print("Введіть номер завдання: ");
         return scanner.nextInt();
     }
 }

@@ -32,6 +32,9 @@ public class DataFactory {
             case IS_ACTIVE:
                 data = info.isActive();
                 break;
+            case ID:
+                data = info.getID();
+                break;
             case TASK:
                 Task task;
                 if(!info.isRepeated()) {

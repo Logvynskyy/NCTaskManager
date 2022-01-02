@@ -5,7 +5,6 @@ import ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType;
-import ua.edu.sumdu.j2se.logvynskyy.model.utils.GetTaskByName;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO;
 import ua.edu.sumdu.j2se.logvynskyy.view.DeleteMessage;
 import ua.edu.sumdu.j2se.logvynskyy.view.FailMessage;
@@ -19,14 +18,14 @@ public class DeleteTask implements Action{
 
     @Override
     public View perform() {
-        String title = (String) DataFactory.getData(DataType.TITLE);
+        int id = (int) DataFactory.getData(DataType.ID);
         try {
             AbstractTaskList list = ArrayTaskList.getList();
-            list.remove(GetTaskByName.getTask(title));
+            list.remove(list.getTask(id - 1));
             TaskIO.write(list, new FileWriter("data.json"));
-        } catch (ClassNotFoundException e) {
+        } catch (IndexOutOfBoundsException | NullPointerException e) {
             logger.error(e.getMessage());
-            System.out.println("Не знайдено задачу з введеною назвою!");
+            System.out.println("Невірно заданий номер завдання!");
             return new FailMessage();
         } catch (IOException e) {
             logger.error(e.getMessage());
