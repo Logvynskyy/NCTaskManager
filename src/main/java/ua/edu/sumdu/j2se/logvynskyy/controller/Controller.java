@@ -20,11 +20,15 @@ public class Controller {
 
     public void getAction(int num) {
         logger.info("Called an action №" + num);
-        if(num > 7 || num < 1){
+        if(num > 7 || num < 0){
             logger.error("Called an action that does not exist");
             throw new IllegalArgumentException("Введіть коректний номер задачі!");
         }
         Menu menu = Menu.getMenu();
+        Notificator notificator = new Notificator();
+        notificator.setDaemon(true);
+        notificator.start();
+
         Action action = menu.getAction(num);
         View page = action.perform();
         logger.info("Performed an action №" + num + " and returned View " + page.getClass().getSimpleName());
