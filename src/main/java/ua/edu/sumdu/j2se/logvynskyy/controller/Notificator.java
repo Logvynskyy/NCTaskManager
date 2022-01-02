@@ -1,5 +1,6 @@
 package ua.edu.sumdu.j2se.logvynskyy.controller;
 
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.Task;
@@ -9,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public class Notificator extends Thread {
-
+    private static final Logger logger = Logger.getLogger(Notificator.class);
     private StringBuilder sb = new StringBuilder();
     private LocalDateTime curTime = LocalDateTime.now();
 
@@ -30,6 +31,7 @@ public class Notificator extends Thread {
                 LocalDateTime time = task.nextTimeAfter(curTime);
                 while(!time.isAfter(curTime)){
                     if(time.isEqual(curTime)){
+                        logger.info("Notificator worked for time " + curTime);
                         sb.append("Задача ").append(task.getTitle()).append(" повинна виконатися зараз!");
                         NotificationMessage nm = new NotificationMessage(sb.toString());
                         nm.getMessage();
