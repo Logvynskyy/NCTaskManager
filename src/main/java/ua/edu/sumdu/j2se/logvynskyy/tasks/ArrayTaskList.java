@@ -39,8 +39,7 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
     public boolean remove(Task t) throws NullPointerException{
         if(t == null) throw new NullPointerException("Задача не повинна бути пустою!");
         for (int i = 0; i < size; i++) {
-            String title = taskList[i].getTitle();
-            if (title != null && title.equals(t.getTitle())) {
+            if (taskList[i].equals(t)) {
                 if (i + 1 < size) {
                     while (++i < size) {
                         taskList[i - 1] = taskList[i];

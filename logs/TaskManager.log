@@ -1,0 +1,1104 @@
+2021-12-26 01:41:27 INFO  Controller:17 - The program has started. Controller created
+2021-12-26 01:41:28 INFO  Controller:22 - Called an action №4
+2021-12-26 01:41:28 INFO  Menu:20 - Menu requested
+2021-12-26 01:41:28 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-26 01:41:28 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:41:28 INFO  GetInfo:15 - Returned info about task list
+2021-12-26 01:41:28 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-26 01:41:31 INFO  Controller:22 - Called an action №1
+2021-12-26 01:41:31 INFO  Menu:20 - Menu requested
+2021-12-26 01:41:31 INFO  Menu:36 - Returned an action - AddTask
+2021-12-26 01:41:31 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:41:45 INFO  DataFactory:56 - Returned requested data type - TASK
+2021-12-26 01:41:45 INFO  AddTask:30 - Added new task and wrote info to the file
+2021-12-26 01:41:45 INFO  Controller:30 - Performed an action №1 and returned View AddMessage
+2021-12-26 01:41:48 INFO  Controller:22 - Called an action №4
+2021-12-26 01:41:48 INFO  Menu:20 - Menu requested
+2021-12-26 01:41:48 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-26 01:41:48 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:41:48 INFO  GetInfo:15 - Returned info about task list
+2021-12-26 01:41:48 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-26 01:41:57 INFO  Controller:22 - Called an action №8
+2021-12-26 01:41:57 ERROR Controller:24 - Called an action that does not exist
+2021-12-26 01:42:03 INFO  Controller:22 - Called an action №2
+2021-12-26 01:42:03 INFO  Menu:20 - Menu requested
+2021-12-26 01:42:03 INFO  Menu:36 - Returned an action - ChangeTask
+2021-12-26 01:42:05 INFO  DataFactory:56 - Returned requested data type - TITLE
+2021-12-26 01:42:05 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:42:05 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:42:05 ERROR GetTaskByName:19 - Task with given title doesn't exist
+2021-12-26 01:42:05 ERROR ChangeTask:30 - 
+2021-12-26 01:42:05 INFO  ChangeTask:37 - Changed parameters of given task
+2021-12-26 01:42:05 INFO  Controller:30 - Performed an action №2 and returned View ChangeMessage
+2021-12-26 01:42:31 INFO  Controller:22 - Called an action №7
+2021-12-26 01:42:31 INFO  Menu:20 - Menu requested
+2021-12-26 01:42:31 INFO  Menu:36 - Returned an action - Exit
+2021-12-26 01:42:31 INFO  Exit:11 - Exiting program
+2021-12-26 01:42:31 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2021-12-26 01:48:17 INFO  Controller:17 - The program has started. Controller created
+2021-12-26 01:48:19 INFO  Controller:22 - Called an action №4
+2021-12-26 01:48:19 INFO  Menu:20 - Menu requested
+2021-12-26 01:48:19 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-26 01:48:19 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:48:19 INFO  GetInfo:15 - Returned info about task list
+2021-12-26 01:48:19 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-26 01:48:24 INFO  Controller:22 - Called an action №1
+2021-12-26 01:48:24 INFO  Menu:20 - Menu requested
+2021-12-26 01:48:24 INFO  Menu:36 - Returned an action - AddTask
+2021-12-26 01:48:24 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:49:14 INFO  Controller:22 - Called an action №4
+2021-12-26 01:49:14 INFO  Menu:20 - Menu requested
+2021-12-26 01:49:14 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-26 01:49:14 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:49:14 INFO  GetInfo:15 - Returned info about task list
+2021-12-26 01:49:14 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-26 01:49:20 INFO  Controller:22 - Called an action №2
+2021-12-26 01:49:20 INFO  Menu:20 - Menu requested
+2021-12-26 01:49:20 INFO  Menu:36 - Returned an action - ChangeTask
+2021-12-26 01:49:22 INFO  DataFactory:56 - Returned requested data type - TITLE
+2021-12-26 01:49:22 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:49:22 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:49:22 ERROR GetTaskByName:19 - Task with given title doesn't exist
+2021-12-26 01:49:22 ERROR ChangeTask:31 - 
+2021-12-26 01:49:22 INFO  Controller:30 - Performed an action №2 and returned View FailMessage
+2021-12-26 01:49:58 INFO  Controller:22 - Called an action №8
+2021-12-26 01:49:58 ERROR Controller:24 - Called an action that does not exist
+2021-12-26 01:50:00 INFO  Controller:22 - Called an action №7
+2021-12-26 01:50:00 INFO  Menu:20 - Menu requested
+2021-12-26 01:50:00 INFO  Menu:36 - Returned an action - Exit
+2021-12-26 01:50:00 INFO  Exit:11 - Exiting program
+2021-12-26 01:50:00 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2021-12-26 01:51:34 INFO  Controller:17 - The program has started. Controller created
+2021-12-26 01:51:35 INFO  Controller:22 - Called an action №4
+2021-12-26 01:51:35 INFO  Menu:20 - Menu requested
+2021-12-26 01:51:35 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-26 01:51:35 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:51:35 INFO  GetInfo:15 - Returned info about task list
+2021-12-26 01:51:35 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-26 01:51:37 INFO  Controller:22 - Called an action №2
+2021-12-26 01:51:37 INFO  Menu:20 - Menu requested
+2021-12-26 01:51:37 INFO  Menu:36 - Returned an action - ChangeTask
+2021-12-26 01:51:39 INFO  DataFactory:56 - Returned requested data type - TITLE
+2021-12-26 01:51:39 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:51:39 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 01:51:39 ERROR GetTaskByName:19 - Task with given title doesn't exist
+2021-12-26 01:51:39 ERROR ChangeTask:31 - 
+2021-12-26 01:51:39 INFO  Controller:30 - Performed an action №2 and returned View FailMessage
+2021-12-26 01:51:41 INFO  Controller:22 - Called an action №7
+2021-12-26 01:51:41 INFO  Menu:20 - Menu requested
+2021-12-26 01:51:41 INFO  Menu:36 - Returned an action - Exit
+2021-12-26 01:51:41 INFO  Exit:11 - Exiting program
+2021-12-26 01:51:41 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2021-12-26 17:03:34 INFO  Controller:17 - The program has started. Controller created
+2021-12-26 17:14:05 INFO  Controller:22 - Called an action №7
+2021-12-26 17:14:05 INFO  Menu:20 - Menu requested
+2021-12-26 17:14:05 INFO  Menu:36 - Returned an action - Exit
+2021-12-26 17:14:05 INFO  Exit:11 - Exiting program
+2021-12-26 17:14:05 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2021-12-26 20:14:32 INFO  Controller:17 - The program has started. Controller created
+2021-12-26 20:14:42 INFO  Controller:22 - Called an action №4
+2021-12-26 20:14:42 INFO  Menu:20 - Menu requested
+2021-12-26 20:14:42 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-26 20:14:42 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-26 20:14:42 INFO  GetInfo:15 - Returned info about task list
+2021-12-26 20:14:42 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-28 16:56:43 INFO  Controller:17 - The program has started. Controller created
+2021-12-28 16:56:45 INFO  Controller:22 - Called an action №4
+2021-12-28 16:56:45 INFO  Menu:20 - Menu requested
+2021-12-28 16:56:45 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-28 16:56:45 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 16:56:45 INFO  GetInfo:15 - Returned info about task list
+2021-12-28 16:56:45 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-28 16:56:48 INFO  Controller:22 - Called an action №3
+2021-12-28 16:56:48 INFO  Menu:20 - Menu requested
+2021-12-28 16:56:48 INFO  Menu:36 - Returned an action - DeleteTask
+2021-12-28 16:56:50 INFO  DataFactory:56 - Returned requested data type - TITLE
+2021-12-28 16:56:50 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 16:56:50 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 16:56:50 ERROR GetTaskByName:19 - Task with given title doesn't exist
+2021-12-28 16:56:50 ERROR DeleteTask:28 - 
+2021-12-28 16:56:50 INFO  Controller:30 - Performed an action №3 and returned View FailMessage
+2021-12-28 16:57:06 INFO  Controller:22 - Called an action №7
+2021-12-28 16:57:06 INFO  Menu:20 - Menu requested
+2021-12-28 16:57:06 INFO  Menu:36 - Returned an action - Exit
+2021-12-28 16:57:06 INFO  Exit:11 - Exiting program
+2021-12-28 16:57:06 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2021-12-28 17:09:34 INFO  Controller:17 - The program has started. Controller created
+2021-12-28 17:09:42 INFO  Controller:22 - Called an action №4
+2021-12-28 17:09:42 INFO  Menu:20 - Menu requested
+2021-12-28 17:09:42 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-28 17:09:42 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:09:42 INFO  GetInfo:15 - Returned info about task list
+2021-12-28 17:09:42 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-28 17:09:46 INFO  Controller:22 - Called an action №5
+2021-12-28 17:09:46 INFO  Menu:20 - Menu requested
+2021-12-28 17:09:46 INFO  Menu:36 - Returned an action - GetCalendar
+2021-12-28 17:09:46 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:10:17 INFO  DataFactory:56 - Returned requested data type - START_TIME
+2021-12-28 17:10:26 INFO  DataFactory:56 - Returned requested data type - END_TIME
+2021-12-28 17:10:26 INFO  GetCalendar:40 - Formed a calendar of tasks in two given dates
+2021-12-28 17:10:26 INFO  Controller:30 - Performed an action №5 and returned View CalendarMessage
+2021-12-28 17:11:34 INFO  Controller:22 - Called an action №1
+2021-12-28 17:11:34 INFO  Menu:20 - Menu requested
+2021-12-28 17:11:34 INFO  Menu:36 - Returned an action - AddTask
+2021-12-28 17:11:34 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:12:10 INFO  DataFactory:56 - Returned requested data type - TASK
+2021-12-28 17:12:10 INFO  AddTask:30 - Added new task and wrote info to the file
+2021-12-28 17:12:10 INFO  Controller:30 - Performed an action №1 and returned View AddMessage
+2021-12-28 17:12:11 INFO  Controller:22 - Called an action №4
+2021-12-28 17:12:11 INFO  Menu:20 - Menu requested
+2021-12-28 17:12:11 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-28 17:12:11 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:12:11 INFO  GetInfo:15 - Returned info about task list
+2021-12-28 17:12:11 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-28 17:12:22 INFO  Controller:22 - Called an action №6
+2021-12-28 17:12:22 INFO  Menu:20 - Menu requested
+2021-12-28 17:12:22 INFO  Menu:36 - Returned an action - Help
+2021-12-28 17:12:22 INFO  Help:11 - Returned a guide to the program
+2021-12-28 17:12:22 INFO  Controller:30 - Performed an action №6 and returned View HelpMessage
+2021-12-28 17:12:26 INFO  Controller:22 - Called an action №4
+2021-12-28 17:12:26 INFO  Menu:20 - Menu requested
+2021-12-28 17:12:26 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-28 17:12:26 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:12:26 INFO  GetInfo:15 - Returned info about task list
+2021-12-28 17:12:26 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-28 17:12:29 INFO  Controller:22 - Called an action №5
+2021-12-28 17:12:29 INFO  Menu:20 - Menu requested
+2021-12-28 17:12:29 INFO  Menu:36 - Returned an action - GetCalendar
+2021-12-28 17:12:29 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:12:37 INFO  DataFactory:56 - Returned requested data type - START_TIME
+2021-12-28 17:12:44 INFO  DataFactory:56 - Returned requested data type - END_TIME
+2021-12-28 17:12:44 INFO  GetCalendar:40 - Formed a calendar of tasks in two given dates
+2021-12-28 17:12:44 INFO  Controller:30 - Performed an action №5 and returned View CalendarMessage
+2021-12-28 17:13:29 INFO  Controller:17 - The program has started. Controller created
+2021-12-28 17:13:31 INFO  Controller:22 - Called an action №5
+2021-12-28 17:13:31 INFO  Menu:20 - Menu requested
+2021-12-28 17:13:31 INFO  Menu:36 - Returned an action - GetCalendar
+2021-12-28 17:13:31 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:13:42 INFO  DataFactory:56 - Returned requested data type - START_TIME
+2021-12-28 17:13:49 INFO  DataFactory:56 - Returned requested data type - END_TIME
+2021-12-28 17:13:49 INFO  GetCalendar:40 - Formed a calendar of tasks in two given dates
+2021-12-28 17:13:49 INFO  Controller:30 - Performed an action №5 and returned View CalendarMessage
+2021-12-28 17:21:23 INFO  Controller:22 - Called an action №7
+2021-12-28 17:21:23 INFO  Menu:20 - Menu requested
+2021-12-28 17:21:23 INFO  Menu:36 - Returned an action - Exit
+2021-12-28 17:21:23 INFO  Exit:11 - Exiting program
+2021-12-28 17:21:23 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2021-12-28 17:22:43 INFO  Controller:17 - The program has started. Controller created
+2021-12-28 17:22:45 INFO  Controller:22 - Called an action №4
+2021-12-28 17:22:45 INFO  Menu:20 - Menu requested
+2021-12-28 17:22:45 INFO  Menu:36 - Returned an action - GetInfo
+2021-12-28 17:22:45 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:22:45 INFO  GetInfo:15 - Returned info about task list
+2021-12-28 17:22:45 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2021-12-28 17:22:50 INFO  Controller:22 - Called an action №5
+2021-12-28 17:22:50 INFO  Menu:20 - Menu requested
+2021-12-28 17:22:50 INFO  Menu:36 - Returned an action - GetCalendar
+2021-12-28 17:22:50 INFO  ArrayTaskList:37 - Returned an array of tasks
+2021-12-28 17:22:57 INFO  DataFactory:56 - Returned requested data type - START_TIME
+2021-12-28 17:23:04 INFO  DataFactory:56 - Returned requested data type - END_TIME
+2021-12-28 17:23:04 INFO  GetCalendar:36 - Formed a calendar of tasks in two given dates
+2021-12-28 17:23:04 INFO  Controller:30 - Performed an action №5 and returned View CalendarMessage
+2022-01-02 15:46:10 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 15:46:14 INFO  Controller:22 - Called an action №4
+2022-01-02 15:46:14 INFO  Menu:20 - Menu requested
+2022-01-02 15:46:14 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 15:46:14 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 15:46:14 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 15:46:14 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 15:48:04 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 15:48:06 INFO  Controller:22 - Called an action №4
+2022-01-02 15:48:06 INFO  Menu:20 - Menu requested
+2022-01-02 15:48:06 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 15:48:06 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 15:48:06 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 15:48:06 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 15:48:45 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 15:48:46 INFO  Controller:22 - Called an action №4
+2022-01-02 15:48:46 INFO  Menu:20 - Menu requested
+2022-01-02 15:48:46 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 15:48:46 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 15:48:46 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 15:48:46 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 15:49:59 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 15:50:07 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 15:50:08 INFO  Controller:22 - Called an action №4
+2022-01-02 15:50:08 INFO  Menu:20 - Menu requested
+2022-01-02 15:50:08 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 15:50:08 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 15:50:08 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 15:50:08 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 16:26:29 INFO  Controller:22 - Called an action №7
+2022-01-02 16:26:29 INFO  Menu:20 - Menu requested
+2022-01-02 16:26:29 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 16:26:29 INFO  Exit:11 - Exiting program
+2022-01-02 16:26:29 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2022-01-02 18:21:00 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:21:02 INFO  Controller:22 - Called an action №4
+2022-01-02 18:21:02 INFO  Menu:20 - Menu requested
+2022-01-02 18:21:02 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:21:02 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:21:02 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:21:02 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:21:19 INFO  Controller:22 - Called an action №7
+2022-01-02 18:21:19 INFO  Menu:20 - Menu requested
+2022-01-02 18:21:19 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 18:21:19 INFO  Exit:11 - Exiting program
+2022-01-02 18:21:19 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2022-01-02 18:34:27 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:34:28 INFO  Controller:22 - Called an action №4
+2022-01-02 18:34:28 INFO  Menu:20 - Menu requested
+2022-01-02 18:34:28 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:34:28 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:34:28 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:34:28 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:34:36 INFO  Controller:22 - Called an action №2
+2022-01-02 18:34:36 INFO  Menu:20 - Menu requested
+2022-01-02 18:34:36 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-02 18:34:57 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 18:34:57 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:34:57 ERROR ChangeTask:30 - 
+2022-01-02 18:34:57 INFO  Controller:30 - Performed an action №2 and returned View FailMessage
+2022-01-02 18:35:06 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:35:08 INFO  Controller:22 - Called an action №2
+2022-01-02 18:35:08 INFO  Menu:20 - Menu requested
+2022-01-02 18:35:08 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-02 18:35:10 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 18:35:10 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:35:15 INFO  Controller:22 - Called an action №4
+2022-01-02 18:35:15 INFO  Menu:20 - Menu requested
+2022-01-02 18:35:15 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:35:15 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:35:15 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:35:15 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:35:39 INFO  Controller:22 - Called an action №7
+2022-01-02 18:35:39 INFO  Menu:20 - Menu requested
+2022-01-02 18:35:39 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 18:35:39 INFO  Exit:11 - Exiting program
+2022-01-02 18:35:39 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2022-01-02 18:38:29 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:38:33 INFO  Controller:22 - Called an action №4
+2022-01-02 18:38:33 INFO  Menu:20 - Menu requested
+2022-01-02 18:38:33 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:38:33 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:38:33 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:38:33 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:38:35 INFO  Controller:22 - Called an action №2
+2022-01-02 18:38:35 INFO  Menu:20 - Menu requested
+2022-01-02 18:38:35 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-02 18:38:36 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 18:38:36 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:38:36 ERROR ChangeTask:30 - 
+2022-01-02 18:38:36 INFO  Controller:30 - Performed an action №2 and returned View FailMessage
+2022-01-02 18:38:39 INFO  Controller:22 - Called an action №2
+2022-01-02 18:38:39 INFO  Menu:20 - Menu requested
+2022-01-02 18:38:39 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-02 18:38:40 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 18:38:40 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:38:40 ERROR ChangeTask:30 - 
+2022-01-02 18:38:40 INFO  Controller:30 - Performed an action №2 and returned View FailMessage
+2022-01-02 18:40:21 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:40:41 INFO  Controller:22 - Called an action №2
+2022-01-02 18:40:41 INFO  Menu:20 - Menu requested
+2022-01-02 18:40:41 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-02 18:40:43 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 18:40:43 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:40:43 ERROR ChangeTask:30 - 
+2022-01-02 18:40:43 INFO  Controller:30 - Performed an action №2 and returned View FailMessage
+2022-01-02 18:41:34 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:42:04 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:42:05 INFO  Controller:22 - Called an action №4
+2022-01-02 18:42:05 INFO  Menu:20 - Menu requested
+2022-01-02 18:42:05 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:42:05 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:42:05 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:42:05 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:42:32 INFO  Controller:22 - Called an action №2
+2022-01-02 18:42:32 INFO  Menu:20 - Menu requested
+2022-01-02 18:42:32 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-02 18:42:38 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 18:42:38 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:42:38 ERROR ChangeTask:30 - 
+2022-01-02 18:42:38 INFO  Controller:30 - Performed an action №2 and returned View FailMessage
+2022-01-02 18:42:43 INFO  Controller:22 - Called an action №4
+2022-01-02 18:42:43 INFO  Menu:20 - Menu requested
+2022-01-02 18:42:43 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:42:43 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:42:43 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:42:43 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:42:46 INFO  Controller:22 - Called an action №7
+2022-01-02 18:42:46 INFO  Menu:20 - Menu requested
+2022-01-02 18:42:46 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 18:42:46 INFO  Exit:11 - Exiting program
+2022-01-02 18:42:46 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2022-01-02 18:45:11 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:45:12 INFO  Controller:22 - Called an action №4
+2022-01-02 18:45:12 INFO  Menu:20 - Menu requested
+2022-01-02 18:45:12 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:45:12 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:45:12 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:46:31 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:46:44 INFO  Controller:22 - Called an action №4
+2022-01-02 18:46:44 INFO  Menu:20 - Menu requested
+2022-01-02 18:46:44 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:46:44 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:46:44 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:48:02 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:48:03 INFO  Controller:22 - Called an action №4
+2022-01-02 18:48:03 INFO  Menu:20 - Menu requested
+2022-01-02 18:48:03 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:48:03 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:48:03 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:48:03 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:48:45 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:49:03 INFO  Controller:22 - Called an action №4
+2022-01-02 18:49:03 INFO  Menu:20 - Menu requested
+2022-01-02 18:49:03 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:49:03 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:49:03 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:49:03 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:49:21 INFO  Controller:22 - Called an action №3
+2022-01-02 18:49:21 INFO  Menu:20 - Menu requested
+2022-01-02 18:49:21 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-02 18:49:25 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 18:49:25 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:49:25 INFO  DeleteTask:36 - Deleted given task
+2022-01-02 18:49:25 INFO  Controller:30 - Performed an action №3 and returned View DeleteMessage
+2022-01-02 18:49:26 INFO  Controller:22 - Called an action №4
+2022-01-02 18:49:26 INFO  Menu:20 - Menu requested
+2022-01-02 18:49:26 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:49:26 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:49:26 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:49:26 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:50:06 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 18:50:29 INFO  Controller:22 - Called an action №4
+2022-01-02 18:50:29 INFO  Menu:20 - Menu requested
+2022-01-02 18:50:29 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 18:50:29 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 18:50:29 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 18:50:29 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 18:50:55 INFO  Controller:22 - Called an action №6
+2022-01-02 18:50:55 INFO  Menu:20 - Menu requested
+2022-01-02 18:50:55 INFO  Menu:36 - Returned an action - Help
+2022-01-02 18:50:55 INFO  Help:11 - Returned a guide to the program
+2022-01-02 18:50:55 INFO  Controller:30 - Performed an action №6 and returned View HelpMessage
+2022-01-02 18:51:22 INFO  Controller:22 - Called an action №7
+2022-01-02 18:51:22 INFO  Menu:20 - Menu requested
+2022-01-02 18:51:22 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 18:51:22 INFO  Exit:11 - Exiting program
+2022-01-02 18:51:22 INFO  Controller:30 - Performed an action №7 and returned View ExitMessage
+2022-01-02 19:34:48 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 19:34:49 INFO  Controller:22 - Called an action №4
+2022-01-02 19:34:49 INFO  Menu:20 - Menu requested
+2022-01-02 19:34:49 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 19:34:49 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 19:34:49 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 19:34:49 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 20:15:38 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 20:16:13 INFO  Controller:22 - Called an action №1
+2022-01-02 20:16:13 INFO  Menu:20 - Menu requested
+2022-01-02 20:16:13 INFO  Menu:36 - Returned an action - AddTask
+2022-01-02 20:16:13 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 20:17:17 INFO  Controller:22 - Called an action №4
+2022-01-02 20:17:17 INFO  Menu:20 - Menu requested
+2022-01-02 20:17:17 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 20:17:17 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 20:17:17 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 20:17:17 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 20:17:58 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 20:18:01 INFO  Controller:22 - Called an action №1
+2022-01-02 20:18:01 INFO  Menu:20 - Menu requested
+2022-01-02 20:18:01 INFO  Menu:36 - Returned an action - AddTask
+2022-01-02 20:18:01 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 20:18:13 INFO  DataFactory:59 - Returned requested data type - TASK
+2022-01-02 20:18:13 INFO  AddTask:30 - Added new task and wrote info to the file
+2022-01-02 20:18:13 INFO  Controller:30 - Performed an action №1 and returned View AddMessage
+2022-01-02 20:18:14 INFO  Controller:22 - Called an action №4
+2022-01-02 20:18:14 INFO  Menu:20 - Menu requested
+2022-01-02 20:18:14 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 20:18:14 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 20:18:14 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 20:18:14 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 20:50:25 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 20:50:31 INFO  Controller:22 - Called an action №7
+2022-01-02 20:50:31 INFO  Menu:20 - Menu requested
+2022-01-02 20:50:31 INFO  Menu:37 - Returned an action - Notificator
+2022-01-02 20:50:31 INFO  Controller:30 - Performed an action №7 and returned View NotificationMessage
+2022-01-02 20:50:44 INFO  Controller:22 - Called an action №4
+2022-01-02 20:50:44 INFO  Menu:20 - Menu requested
+2022-01-02 20:50:44 INFO  Menu:37 - Returned an action - GetInfo
+2022-01-02 20:50:44 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 20:50:44 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 20:50:44 INFO  Controller:30 - Performed an action №4 and returned View InfoMessage
+2022-01-02 20:50:46 INFO  Controller:22 - Called an action №7
+2022-01-02 20:50:46 INFO  Menu:20 - Menu requested
+2022-01-02 20:50:46 INFO  Menu:37 - Returned an action - Notificator
+2022-01-02 20:50:46 INFO  Controller:30 - Performed an action №7 and returned View NotificationMessage
+2022-01-02 20:50:48 INFO  Controller:22 - Called an action №0
+2022-01-02 20:50:48 ERROR Controller:24 - Called an action that does not exist
+2022-01-02 21:15:18 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 21:15:38 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 21:15:40 INFO  Controller:22 - Called an action №4
+2022-01-02 21:15:40 INFO  Menu:20 - Menu requested
+2022-01-02 21:15:40 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 21:15:40 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:15:40 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:15:40 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 21:15:40 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 21:15:52 INFO  Controller:22 - Called an action №6
+2022-01-02 21:15:52 INFO  Menu:20 - Menu requested
+2022-01-02 21:15:52 INFO  Menu:36 - Returned an action - Help
+2022-01-02 21:15:52 INFO  Help:11 - Returned a guide to the program
+2022-01-02 21:15:52 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:15:52 INFO  Controller:34 - Performed an action №6 and returned View HelpMessage
+2022-01-02 21:16:02 INFO  Controller:22 - Called an action №4
+2022-01-02 21:16:02 INFO  Menu:20 - Menu requested
+2022-01-02 21:16:02 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 21:16:02 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:16:02 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 21:16:02 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:16:02 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 21:16:05 INFO  Controller:22 - Called an action №3
+2022-01-02 21:16:05 INFO  Menu:20 - Menu requested
+2022-01-02 21:16:05 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-02 21:16:05 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:16:08 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 21:16:08 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:16:08 INFO  DeleteTask:35 - Deleted given task
+2022-01-02 21:16:08 INFO  Controller:34 - Performed an action №3 and returned View DeleteMessage
+2022-01-02 21:16:09 INFO  Controller:22 - Called an action №4
+2022-01-02 21:16:09 INFO  Menu:20 - Menu requested
+2022-01-02 21:16:09 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 21:16:09 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:16:09 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:16:09 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 21:16:09 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 21:17:29 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 21:17:31 INFO  Controller:22 - Called an action №4
+2022-01-02 21:17:31 INFO  Menu:20 - Menu requested
+2022-01-02 21:17:31 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 21:17:31 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:17:31 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:17:31 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 21:17:31 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 21:17:33 INFO  Controller:22 - Called an action №1
+2022-01-02 21:17:33 INFO  Menu:20 - Menu requested
+2022-01-02 21:17:33 INFO  Menu:36 - Returned an action - AddTask
+2022-01-02 21:17:33 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:17:33 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:17:56 INFO  DataFactory:59 - Returned requested data type - TASK
+2022-01-02 21:17:56 INFO  AddTask:30 - Added new task and wrote info to the file
+2022-01-02 21:17:56 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-02 21:18:15 INFO  Controller:22 - Called an action №4
+2022-01-02 21:18:15 INFO  Menu:20 - Menu requested
+2022-01-02 21:18:15 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 21:18:15 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:18:15 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:18:15 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 21:18:15 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 21:18:29 INFO  Controller:22 - Called an action №7
+2022-01-02 21:18:29 INFO  Menu:20 - Menu requested
+2022-01-02 21:18:29 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 21:18:29 INFO  Exit:11 - Exiting program
+2022-01-02 21:18:29 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 21:18:29 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-02 22:42:34 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 22:42:35 INFO  Controller:22 - Called an action №4
+2022-01-02 22:42:36 INFO  Menu:20 - Menu requested
+2022-01-02 22:42:36 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 22:42:36 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 22:42:36 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 22:42:36 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 22:42:36 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 22:44:31 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 22:44:33 INFO  Controller:22 - Called an action №4
+2022-01-02 22:44:33 INFO  Menu:20 - Menu requested
+2022-01-02 22:44:33 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 22:44:33 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 22:44:33 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 22:44:33 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 22:44:33 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 22:44:39 INFO  Controller:22 - Called an action №7
+2022-01-02 22:44:39 INFO  Menu:20 - Menu requested
+2022-01-02 22:44:39 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 22:44:39 INFO  Exit:11 - Exiting program
+2022-01-02 22:44:39 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-02 23:30:56 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 23:30:57 INFO  Controller:22 - Called an action №4
+2022-01-02 23:30:57 INFO  Menu:20 - Menu requested
+2022-01-02 23:30:57 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 23:30:57 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:30:57 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:30:57 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 23:30:58 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 23:31:26 INFO  Controller:22 - Called an action №7
+2022-01-02 23:31:26 INFO  Menu:20 - Menu requested
+2022-01-02 23:31:26 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 23:31:26 INFO  Exit:11 - Exiting program
+2022-01-02 23:31:26 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:31:26 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-02 23:33:07 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 23:33:09 INFO  Controller:22 - Called an action №1
+2022-01-02 23:33:09 INFO  Menu:20 - Menu requested
+2022-01-02 23:33:10 INFO  Menu:36 - Returned an action - AddTask
+2022-01-02 23:33:10 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:33:10 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:33:27 INFO  DataFactory:59 - Returned requested data type - TASK
+2022-01-02 23:33:27 INFO  AddTask:30 - Added new task and wrote info to the file
+2022-01-02 23:33:27 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-02 23:34:17 INFO  Controller:22 - Called an action №7
+2022-01-02 23:34:17 INFO  Menu:20 - Menu requested
+2022-01-02 23:34:17 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 23:34:17 INFO  Exit:11 - Exiting program
+2022-01-02 23:34:17 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-02 23:38:51 INFO  Controller:17 - The program has started. Controller created
+2022-01-02 23:38:52 INFO  Controller:22 - Called an action №4
+2022-01-02 23:38:52 INFO  Menu:20 - Menu requested
+2022-01-02 23:38:52 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 23:38:52 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:38:52 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:38:52 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 23:38:52 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 23:38:55 INFO  Controller:22 - Called an action №3
+2022-01-02 23:38:55 INFO  Menu:20 - Menu requested
+2022-01-02 23:38:55 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-02 23:38:55 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:38:57 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-02 23:38:57 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:38:57 INFO  DeleteTask:35 - Deleted given task
+2022-01-02 23:38:57 INFO  Controller:34 - Performed an action №3 and returned View DeleteMessage
+2022-01-02 23:38:58 INFO  Controller:22 - Called an action №4
+2022-01-02 23:38:58 INFO  Menu:20 - Menu requested
+2022-01-02 23:38:58 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-02 23:38:58 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:38:58 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:38:58 INFO  GetInfo:15 - Returned info about task list
+2022-01-02 23:38:58 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-02 23:39:00 INFO  Controller:22 - Called an action №1
+2022-01-02 23:39:00 INFO  Menu:20 - Menu requested
+2022-01-02 23:39:00 INFO  Menu:36 - Returned an action - AddTask
+2022-01-02 23:39:00 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:39:00 INFO  ArrayTaskList:37 - Returned an array of tasks
+2022-01-02 23:39:16 INFO  DataFactory:59 - Returned requested data type - TASK
+2022-01-02 23:39:16 INFO  AddTask:30 - Added new task and wrote info to the file
+2022-01-02 23:39:16 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-02 23:40:17 INFO  Controller:22 - Called an action №7
+2022-01-02 23:40:17 INFO  Menu:20 - Menu requested
+2022-01-02 23:40:17 INFO  Menu:36 - Returned an action - Exit
+2022-01-02 23:40:17 INFO  Exit:11 - Exiting program
+2022-01-02 23:40:17 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:00:10 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:00:13 INFO  Controller:22 - Called an action №4
+2022-01-03 03:00:13 INFO  Menu:20 - Menu requested
+2022-01-03 03:00:13 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:13 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:00:13 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:13 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:00:13 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:00:14 INFO  Controller:22 - Called an action №4
+2022-01-03 03:00:14 INFO  Menu:20 - Menu requested
+2022-01-03 03:00:14 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:00:14 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:14 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:00:14 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:00:14 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:15 INFO  Controller:22 - Called an action №4
+2022-01-03 03:00:15 INFO  Menu:20 - Menu requested
+2022-01-03 03:00:15 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:00:15 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:15 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:00:15 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:15 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:00:15 INFO  Controller:22 - Called an action №4
+2022-01-03 03:00:15 INFO  Menu:20 - Menu requested
+2022-01-03 03:00:15 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:00:15 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:15 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:00:15 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:00:15 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:39 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:00:40 INFO  Controller:22 - Called an action №4
+2022-01-03 03:00:40 INFO  Menu:20 - Menu requested
+2022-01-03 03:00:40 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:00:40 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:40 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:00:40 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:00:40 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:48 INFO  Controller:22 - Called an action №4
+2022-01-03 03:00:48 INFO  Menu:20 - Menu requested
+2022-01-03 03:00:48 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:00:48 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:48 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:00:48 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:00:48 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:01:10 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:01:18 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:01:25 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:01:27 INFO  Controller:22 - Called an action №4
+2022-01-03 03:01:27 INFO  Menu:20 - Menu requested
+2022-01-03 03:01:27 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:01:27 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:01:27 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:01:27 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:01:27 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:01:28 INFO  Controller:22 - Called an action №4
+2022-01-03 03:01:28 INFO  Menu:20 - Menu requested
+2022-01-03 03:01:28 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:01:28 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:01:28 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:01:28 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:01:28 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:01:57 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:01:58 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:18 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:02:20 INFO  Controller:22 - Called an action №4
+2022-01-03 03:02:20 INFO  Menu:20 - Menu requested
+2022-01-03 03:02:20 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:02:20 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:20 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:02:20 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:02:20 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:21 INFO  Controller:22 - Called an action №4
+2022-01-03 03:02:21 INFO  Menu:20 - Menu requested
+2022-01-03 03:02:21 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:02:21 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:21 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:02:21 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:21 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:02:25 INFO  Controller:22 - Called an action №4
+2022-01-03 03:02:25 INFO  Menu:20 - Menu requested
+2022-01-03 03:02:25 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:02:25 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:25 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:02:25 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:25 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:02:26 INFO  Controller:22 - Called an action №4
+2022-01-03 03:02:26 INFO  Menu:20 - Menu requested
+2022-01-03 03:02:26 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:02:26 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:26 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:02:26 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:26 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:02:51 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:51 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:55 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:02:56 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:21 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:21 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:25 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:26 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:43 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:03:45 INFO  Controller:22 - Called an action №4
+2022-01-03 03:03:45 INFO  Menu:20 - Menu requested
+2022-01-03 03:03:45 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:03:45 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:45 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:45 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:03:45 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:03:46 INFO  Controller:22 - Called an action №4
+2022-01-03 03:03:46 INFO  Menu:20 - Menu requested
+2022-01-03 03:03:46 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:03:46 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:46 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:03:46 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:03:46 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:47 INFO  Controller:22 - Called an action №4
+2022-01-03 03:03:47 INFO  Menu:20 - Menu requested
+2022-01-03 03:03:47 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:03:47 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:47 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:03:47 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:03:47 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:04:07 INFO  Controller:22 - Called an action №7
+2022-01-03 03:04:07 INFO  Menu:20 - Menu requested
+2022-01-03 03:04:07 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:04:07 INFO  Exit:11 - Exiting program
+2022-01-03 03:04:07 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:04:07 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:07:03 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:07:05 INFO  Controller:22 - Called an action №4
+2022-01-03 03:07:05 INFO  Menu:20 - Menu requested
+2022-01-03 03:07:05 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:07:05 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:05 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:05 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:07:05 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:07:07 INFO  Controller:22 - Called an action №3
+2022-01-03 03:07:07 INFO  Menu:20 - Menu requested
+2022-01-03 03:07:07 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-03 03:07:07 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:09 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-03 03:07:09 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:09 INFO  DeleteTask:37 - Deleted given task
+2022-01-03 03:07:09 INFO  Controller:34 - Performed an action №3 and returned View DeleteMessage
+2022-01-03 03:07:10 INFO  Controller:22 - Called an action №4
+2022-01-03 03:07:10 INFO  Menu:20 - Menu requested
+2022-01-03 03:07:10 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:07:10 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:10 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:07:10 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:10 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:07:22 INFO  Controller:22 - Called an action №7
+2022-01-03 03:07:22 INFO  Menu:20 - Menu requested
+2022-01-03 03:07:22 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:07:22 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:22 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:22 INFO  Exit:25 - Exiting program
+2022-01-03 03:07:22 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:07:25 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:07:26 INFO  Controller:22 - Called an action №4
+2022-01-03 03:07:26 INFO  Menu:20 - Menu requested
+2022-01-03 03:07:26 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:07:26 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:26 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:07:26 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:26 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:07:49 INFO  Controller:22 - Called an action №1
+2022-01-03 03:07:49 INFO  Menu:20 - Menu requested
+2022-01-03 03:07:49 INFO  Menu:36 - Returned an action - AddTask
+2022-01-03 03:07:49 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:49 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:07:56 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:03 INFO  DataFactory:59 - Returned requested data type - TASK
+2022-01-03 03:08:03 INFO  AddTask:31 - Added new task and wrote info to the file
+2022-01-03 03:08:03 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-03 03:08:04 INFO  Controller:22 - Called an action №3
+2022-01-03 03:08:04 INFO  Menu:20 - Menu requested
+2022-01-03 03:08:04 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-03 03:08:04 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:19 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:26 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:30 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-03 03:08:30 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:34 INFO  Controller:22 - Called an action №4
+2022-01-03 03:08:34 INFO  Menu:20 - Menu requested
+2022-01-03 03:08:34 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:08:34 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:34 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:08:34 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:34 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:08:34 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:38 INFO  Controller:22 - Called an action №7
+2022-01-03 03:08:38 INFO  Menu:20 - Menu requested
+2022-01-03 03:08:38 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:08:38 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:38 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:38 INFO  Exit:25 - Exiting program
+2022-01-03 03:08:38 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:08:41 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:08:42 INFO  Controller:22 - Called an action №4
+2022-01-03 03:08:42 INFO  Menu:20 - Menu requested
+2022-01-03 03:08:42 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:08:42 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:42 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:42 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:08:42 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:08:45 INFO  Controller:22 - Called an action №2
+2022-01-03 03:08:45 INFO  Menu:20 - Menu requested
+2022-01-03 03:08:45 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-03 03:08:45 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:08:48 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-03 03:08:48 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:12 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:15 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:18 INFO  DataFactory:59 - Returned requested data type - TASK
+2022-01-03 03:09:18 INFO  ChangeTask:40 - Changed parameters of given task
+2022-01-03 03:09:18 INFO  Controller:34 - Performed an action №2 and returned View ChangeMessage
+2022-01-03 03:09:19 INFO  Controller:22 - Called an action №4
+2022-01-03 03:09:19 INFO  Menu:20 - Menu requested
+2022-01-03 03:09:19 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:09:19 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:19 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:09:19 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:19 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:09:23 INFO  Controller:22 - Called an action №7
+2022-01-03 03:09:23 INFO  Menu:20 - Menu requested
+2022-01-03 03:09:23 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:09:23 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:23 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:23 INFO  Exit:25 - Exiting program
+2022-01-03 03:09:23 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:09:29 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:09:31 INFO  Controller:22 - Called an action №4
+2022-01-03 03:09:31 INFO  Menu:20 - Menu requested
+2022-01-03 03:09:31 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:09:31 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:31 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:31 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:09:31 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:09:35 INFO  Controller:22 - Called an action №7
+2022-01-03 03:09:35 INFO  Menu:20 - Menu requested
+2022-01-03 03:09:35 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:09:35 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:35 INFO  ArrayTaskList:39 - Returned an array of tasks
+2022-01-03 03:09:35 INFO  Exit:25 - Exiting program
+2022-01-03 03:09:35 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:12:53 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:12:55 INFO  Controller:22 - Called an action №4
+2022-01-03 03:12:55 INFO  Menu:20 - Menu requested
+2022-01-03 03:12:55 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:12:55 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:12:55 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:12:55 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:12:55 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:12:58 INFO  Controller:22 - Called an action №3
+2022-01-03 03:12:58 INFO  Menu:20 - Menu requested
+2022-01-03 03:12:58 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-03 03:12:58 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:00 INFO  DataFactory:59 - Returned requested data type - ID
+2022-01-03 03:13:00 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:00 INFO  DeleteTask:27 - Deleted given task
+2022-01-03 03:13:00 INFO  Controller:34 - Performed an action №3 and returned View DeleteMessage
+2022-01-03 03:13:01 INFO  Controller:22 - Called an action №4
+2022-01-03 03:13:01 INFO  Menu:20 - Menu requested
+2022-01-03 03:13:01 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:13:01 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:01 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:13:01 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:01 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:13:02 INFO  Controller:22 - Called an action №7
+2022-01-03 03:13:02 INFO  Menu:20 - Menu requested
+2022-01-03 03:13:02 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:13:02 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:02 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:02 INFO  Exit:25 - Exiting program
+2022-01-03 03:13:02 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:13:05 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:13:07 INFO  Controller:22 - Called an action №4
+2022-01-03 03:13:07 INFO  Menu:20 - Menu requested
+2022-01-03 03:13:07 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:13:07 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:07 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:13:07 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:07 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:13:10 INFO  Controller:22 - Called an action №4
+2022-01-03 03:13:10 INFO  Menu:20 - Menu requested
+2022-01-03 03:13:10 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:13:10 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:10 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:13:10 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:10 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:13:13 INFO  Controller:22 - Called an action №7
+2022-01-03 03:13:13 INFO  Menu:20 - Menu requested
+2022-01-03 03:13:13 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:13:13 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:13 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:13:13 INFO  Exit:25 - Exiting program
+2022-01-03 03:13:13 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:16:29 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:16:30 INFO  Controller:22 - Called an action №1
+2022-01-03 03:16:30 INFO  Menu:20 - Menu requested
+2022-01-03 03:16:30 INFO  Menu:36 - Returned an action - AddTask
+2022-01-03 03:16:30 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:16:30 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:16:57 INFO  DataFactory:60 - Returned requested data type - TASK
+2022-01-03 03:16:57 INFO  AddTask:20 - Added new task and wrote info to the file
+2022-01-03 03:16:57 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-03 03:16:58 INFO  Controller:22 - Called an action №4
+2022-01-03 03:16:58 INFO  Menu:20 - Menu requested
+2022-01-03 03:16:58 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:16:58 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:16:58 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:16:58 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:16:58 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:17:00 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:17:22 INFO  Controller:22 - Called an action №2
+2022-01-03 03:17:22 INFO  Menu:20 - Menu requested
+2022-01-03 03:17:22 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-03 03:17:22 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:17:28 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:17:30 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:17:31 INFO  DataFactory:60 - Returned requested data type - ID
+2022-01-03 03:17:31 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:17:52 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:17:58 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:00 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:03 INFO  Controller:22 - Called an action №4
+2022-01-03 03:18:03 INFO  Menu:20 - Menu requested
+2022-01-03 03:18:03 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:18:03 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:03 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:03 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:18:03 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:18:22 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:28 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:30 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:33 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:52 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:18:58 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:00 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:03 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:22 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:28 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:30 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:33 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:42 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:19:43 INFO  Controller:22 - Called an action №4
+2022-01-03 03:19:43 INFO  Menu:20 - Menu requested
+2022-01-03 03:19:43 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:19:43 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:43 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:43 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:19:43 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:19:45 INFO  Controller:22 - Called an action №1
+2022-01-03 03:19:45 INFO  Menu:20 - Menu requested
+2022-01-03 03:19:45 INFO  Menu:36 - Returned an action - AddTask
+2022-01-03 03:19:45 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:19:45 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:20:13 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:20:15 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:20:43 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:20:45 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:21:13 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:21:15 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:04 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:22:05 INFO  Controller:22 - Called an action №4
+2022-01-03 03:22:05 INFO  Menu:20 - Menu requested
+2022-01-03 03:22:05 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:22:05 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:05 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:05 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:22:05 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:22:07 INFO  Controller:22 - Called an action №1
+2022-01-03 03:22:07 INFO  Menu:20 - Menu requested
+2022-01-03 03:22:07 INFO  Menu:36 - Returned an action - AddTask
+2022-01-03 03:22:07 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:07 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:35 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:37 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:45 INFO  DataFactory:60 - Returned requested data type - TASK
+2022-01-03 03:22:45 INFO  AddTask:20 - Added new task and wrote info to the file
+2022-01-03 03:22:45 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-03 03:22:47 INFO  Controller:22 - Called an action №4
+2022-01-03 03:22:47 INFO  Menu:20 - Menu requested
+2022-01-03 03:22:47 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:22:47 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:47 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:22:47 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:22:47 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:23:05 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:23:07 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:23:17 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:23:35 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:23:37 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:23:47 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:05 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:07 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:17 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:18 INFO  Controller:22 - Called an action №2
+2022-01-03 03:24:18 INFO  Menu:20 - Menu requested
+2022-01-03 03:24:18 INFO  Menu:36 - Returned an action - ChangeTask
+2022-01-03 03:24:18 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:23 INFO  DataFactory:60 - Returned requested data type - ID
+2022-01-03 03:24:23 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:35 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:37 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:47 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:48 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:54 INFO  DataFactory:60 - Returned requested data type - TASK
+2022-01-03 03:24:54 INFO  ChangeTask:29 - Changed parameters of given task
+2022-01-03 03:24:54 INFO  Controller:34 - Performed an action №2 and returned View ChangeMessage
+2022-01-03 03:24:55 INFO  Controller:22 - Called an action №4
+2022-01-03 03:24:55 INFO  Menu:20 - Menu requested
+2022-01-03 03:24:55 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:24:55 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:55 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:24:55 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:24:55 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:25:05 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:07 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:17 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:18 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:26 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:35 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:37 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:38 INFO  Controller:22 - Called an action №7
+2022-01-03 03:25:38 INFO  Menu:20 - Menu requested
+2022-01-03 03:25:38 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:25:38 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:38 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:25:38 INFO  Exit:25 - Exiting program
+2022-01-03 03:25:38 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage
+2022-01-03 03:38:21 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:38:23 INFO  Controller:22 - Called an action №4
+2022-01-03 03:38:23 INFO  Menu:20 - Menu requested
+2022-01-03 03:38:23 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:38:23 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:38:23 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:38:23 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:38:23 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:38:26 INFO  Controller:22 - Called an action №1
+2022-01-03 03:38:26 INFO  Menu:20 - Menu requested
+2022-01-03 03:38:26 INFO  Menu:36 - Returned an action - AddTask
+2022-01-03 03:38:26 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:38:26 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:38:50 INFO  DataFactory:60 - Returned requested data type - TASK
+2022-01-03 03:38:50 INFO  AddTask:20 - Added new task and wrote info to the file
+2022-01-03 03:38:50 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-03 03:39:28 INFO  Controller:22 - Called an action №4
+2022-01-03 03:39:28 INFO  Menu:20 - Menu requested
+2022-01-03 03:39:28 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:39:28 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:39:28 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:39:28 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:39:28 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:39:30 INFO  Controller:22 - Called an action №3
+2022-01-03 03:39:30 INFO  Menu:20 - Menu requested
+2022-01-03 03:39:30 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-03 03:39:30 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:39:33 INFO  DataFactory:60 - Returned requested data type - ID
+2022-01-03 03:39:33 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:39:33 INFO  DeleteTask:27 - Deleted given task
+2022-01-03 03:39:33 INFO  Controller:34 - Performed an action №3 and returned View DeleteMessage
+2022-01-03 03:39:35 INFO  Controller:22 - Called an action №4
+2022-01-03 03:39:35 INFO  Menu:20 - Menu requested
+2022-01-03 03:39:35 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:39:35 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:39:35 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:39:35 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:39:35 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:42:03 INFO  Controller:17 - The program has started. Controller created
+2022-01-03 03:42:05 INFO  Controller:22 - Called an action №4
+2022-01-03 03:42:05 INFO  Menu:20 - Menu requested
+2022-01-03 03:42:05 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:42:05 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:05 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:42:05 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:05 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:42:06 INFO  Controller:22 - Called an action №1
+2022-01-03 03:42:06 INFO  Menu:20 - Menu requested
+2022-01-03 03:42:06 INFO  Menu:36 - Returned an action - AddTask
+2022-01-03 03:42:06 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:06 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:18 INFO  DataFactory:60 - Returned requested data type - TASK
+2022-01-03 03:42:18 INFO  AddTask:20 - Added new task and wrote info to the file
+2022-01-03 03:42:18 INFO  Controller:34 - Performed an action №1 and returned View AddMessage
+2022-01-03 03:42:19 INFO  Controller:22 - Called an action №4
+2022-01-03 03:42:19 INFO  Menu:20 - Menu requested
+2022-01-03 03:42:19 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:42:19 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:19 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:42:19 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:19 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:42:22 INFO  Controller:22 - Called an action №3
+2022-01-03 03:42:22 INFO  Menu:20 - Menu requested
+2022-01-03 03:42:22 INFO  Menu:36 - Returned an action - DeleteTask
+2022-01-03 03:42:22 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:24 INFO  DataFactory:60 - Returned requested data type - ID
+2022-01-03 03:42:24 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:24 INFO  DeleteTask:27 - Deleted given task
+2022-01-03 03:42:24 INFO  Controller:34 - Performed an action №3 and returned View DeleteMessage
+2022-01-03 03:42:26 INFO  Controller:22 - Called an action №4
+2022-01-03 03:42:26 INFO  Menu:20 - Menu requested
+2022-01-03 03:42:26 INFO  Menu:36 - Returned an action - GetInfo
+2022-01-03 03:42:26 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:26 INFO  GetInfo:15 - Returned info about task list
+2022-01-03 03:42:26 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:42:26 INFO  Controller:34 - Performed an action №4 and returned View InfoMessage
+2022-01-03 03:43:16 INFO  Controller:22 - Called an action №7
+2022-01-03 03:43:16 INFO  Menu:20 - Menu requested
+2022-01-03 03:43:16 INFO  Menu:36 - Returned an action - Exit
+2022-01-03 03:43:16 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:43:16 INFO  ArrayTaskList:38 - Returned an array of tasks
+2022-01-03 03:43:16 INFO  Exit:25 - Exiting program
+2022-01-03 03:43:16 INFO  Controller:34 - Performed an action №7 and returned View ExitMessage

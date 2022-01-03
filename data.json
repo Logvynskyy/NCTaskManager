@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Task1",
+    "time": {
+      "date": {
+        "year": 2021,
+        "month": 12,
+        "day": 26
+      },
+      "time": {
+        "hour": 0,
+        "minute": 30,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "interval": 0,
+    "isActive": false
+  },
+  {
+    "title": "Repeated",
+    "start": {
+      "date": {
+        "year": 2021,
+        "month": 12,
+        "day": 28
+      },
+      "time": {
+        "hour": 17,
+        "minute": 50,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "end": {
+      "date": {
+        "year": 2022,
+        "month": 1,
+        "day": 1
+      },
+      "time": {
+        "hour": 0,
+        "minute": 0,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "interval": 2000,
+    "isActive": false
+  },
+  {
+    "title": "Test",
+    "time": {
+      "date": {
+        "year": 2022,
+        "month": 1,
+        "day": 2
+      },
+      "time": {
+        "hour": 21,
+        "minute": 18,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "interval": 0,
+    "isActive": false
+  },
+  {
+    "title": "Active and repeated",
+    "start": {
+      "date": {
+        "year": 2021,
+        "month": 1,
+        "day": 1
+      },
+      "time": {
+        "hour": 1,
+        "minute": 1,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "end": {
+      "date": {
+        "year": 2024,
+        "month": 1,
+        "day": 1
+      },
+      "time": {
+        "hour": 1,
+        "minute": 1,
+        "second": 0,
+        "nano": 0
+      }
+    },
+    "interval": 200000,
+    "isActive": true
+  }
+]
