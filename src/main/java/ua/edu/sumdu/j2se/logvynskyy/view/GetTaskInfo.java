@@ -9,12 +9,13 @@ public class GetTaskInfo {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
 
     public String getTitle(){
+        scanner.useDelimiter("\\n");
         System.out.print("Введіть назву завдання: ");
         return scanner.next();
     }
 
     public boolean isRepeated(){
-        System.out.print("Чи повторюване буде завдання (1 - так, 0 - ні): ");
+        System.out.print("Чи повторюване буде завдання (1 - так, все інше - ні): ");
         return scanner.nextInt() == 1;
     }
 

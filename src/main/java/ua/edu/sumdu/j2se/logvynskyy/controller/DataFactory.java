@@ -49,6 +49,7 @@ public class DataFactory {
                     int interval = info.getInterval();
                     task = new Task(title, startTime, endTime, interval);
                 }
+                task.setActive(info.isActive());
                 data = task;
                 break;
         }
