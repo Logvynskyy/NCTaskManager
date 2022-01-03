@@ -21,7 +21,7 @@ public class Notificator extends Thread {
 
             this.curTime = LocalDateTime.now();
             Task[] tasks = Arrays.stream(list.getStream().toArray(Task[]::new))
-                    .filter(task -> task.nextTimeAfter(curTime) != null)
+                    .filter(task -> task.nextTimeAfter(curTime) != null && task.isActive())
                     .toArray(Task[]::new);
 
             Comparator<Task> comparatorByTime = Comparator.comparing(o -> o.nextTimeAfter(curTime));
@@ -29,12 +29,13 @@ public class Notificator extends Thread {
 
             for(Task task : tasks){
                 LocalDateTime time = task.nextTimeAfter(curTime);
-                while(!time.isAfter(curTime)){
+                while(true){
                     if(time.isEqual(curTime)){
                         logger.info("Notificator worked for time " + curTime);
                         sb.append("Задача ").append(task.getTitle()).append(" повинна виконатися зараз!");
                         NotificationMessage nm = new NotificationMessage(sb.toString());
                         nm.getMessage();
+                        break;
                     }
                 }
             }
