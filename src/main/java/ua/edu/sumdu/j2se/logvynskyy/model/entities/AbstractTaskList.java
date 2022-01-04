@@ -13,6 +13,8 @@ public abstract class AbstractTaskList implements Iterable<Task>, Serializable {
     public abstract Task getTask(int index);
     public abstract ListTypes.types getInstance();
     public abstract Stream<Task> getStream();
+    public abstract Task[] getTaskList();
+    public abstract void setTaskList(Task[] taskList);
 
 
     @Override

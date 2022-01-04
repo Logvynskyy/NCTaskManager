@@ -32,10 +32,8 @@ public class Notificator extends Thread {
             if(times.length != 0){
                 LocalDateTime time = times[0].nextTimeAfter(curTime);
                 while(time.compareTo(curTime) > -1){
-//                    System.out.println("1");
                     this.curTime = LocalDateTime.parse(LocalDateTime.now().format(formatter));
                     if(time.equals(curTime)){
-//                        System.out.println("EQUALS!");
                         logger.info("Notificator worked for time " + curTime);
                         notification = "Задача " + times[0].getTitle() + " повинна виконатися зараз!";
                         break;

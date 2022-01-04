@@ -124,6 +124,16 @@ public class LinkedTaskList extends AbstractTaskList implements Cloneable{
         return StreamSupport.stream(super.spliterator(), false);
     }
 
+    @Override
+    public Task[] getTaskList() {
+        return getStream().toArray(Task[]::new);
+    }
+
+    @Override
+    public void setTaskList(Task[] taskList) {
+
+    }
+
     private class Iter implements Iterator<Task>{
         int index = 0;
         Node lastUsedNode = new Node(null);

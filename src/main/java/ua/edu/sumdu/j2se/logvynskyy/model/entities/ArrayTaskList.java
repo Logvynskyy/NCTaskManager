@@ -21,7 +21,7 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
     private int size = 10;
     private Task[] taskList = new Task[size];
 
-    private static ArrayTaskList tasks;// = new ArrayTaskList();
+    private static ArrayTaskList tasks;
 
     private ArrayTaskList() {}
 
@@ -29,7 +29,6 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
         if(tasks == null) {
             tasks = new ArrayTaskList();
             try {
-//                tasks = new ArrayTaskList();
                 TaskIO.read(tasks, new FileReader("data.json"));
             } catch (FileNotFoundException e) {
                 logger.error(e.getMessage());
@@ -123,6 +122,16 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
     }
 
     @Override
+    public Task[] getTaskList(){
+        return this.taskList;
+    }
+
+    @Override
+    public void setTaskList(Task[] taskList) {
+        this.taskList = taskList;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof ArrayTaskList)) return false;
@@ -156,10 +165,8 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
         sb.append(size()).append(" задач:");
         for(int i = 0; i < size; i++){
             if(getTask(i) != null)
-                sb.append('\n').append(i + 1 + " - ").append(getTask(i).toString());
+                sb.append('\n').append(i + 1).append(" - ").append(getTask(i).toString());
         }
-//        sb.delete(sb.lastIndexOf(","), sb.lastIndexOf(" ") + 1);
-//        sb.append("]");
         return sb.toString();
     }
 }

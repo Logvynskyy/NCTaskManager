@@ -18,8 +18,9 @@ public class ChangeTask implements Action{
         int id = (int) DataFactory.getData(DataType.ID);
         try {
             AbstractTaskList list = ArrayTaskList.getList();
-            list.remove(list.getTask(id - 1));
-            list.add((Task) DataFactory.getData(DataType.TASK));
+            Task[] tasks = list.getTaskList();
+            tasks[id - 1] = (Task) DataFactory.getData(DataType.TASK);
+            list.setTaskList(tasks);
         } catch (IndexOutOfBoundsException | NullPointerException e) {
             logger.error(e.getCause());
             System.out.println("Невірно заданий номер завдання!");

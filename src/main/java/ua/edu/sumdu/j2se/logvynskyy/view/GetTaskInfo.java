@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class GetTaskInfo {
     Scanner scanner = new Scanner(System.in);
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public String getTitle(){
         scanner.useDelimiter("\\n");
@@ -25,12 +25,14 @@ public class GetTaskInfo {
     }
 
     public LocalDateTime getStartTime(){
-        System.out.print("Введіть час початку виконання завдання у форматі [yyyy-MM-dd'T'HH:mm]: ");
+        scanner.useDelimiter("\\n");
+        System.out.print("Введіть час початку виконання завдання у форматі [yyyy-MM-dd HH:mm]: ");
         return LocalDateTime.parse(scanner.next(), formatter);
     }
 
     public LocalDateTime getEndTime(){
-        System.out.print("Введіть час кінця виконання завдання у форматі [yyyy-MM-dd'T'HH:mm]: ");
+        scanner.useDelimiter("\\n");
+        System.out.print("Введіть час кінця виконання завдання у форматі [yyyy-MM-dd HH:mm]: ");
         return LocalDateTime.parse(scanner.next(), formatter);
     }
 
