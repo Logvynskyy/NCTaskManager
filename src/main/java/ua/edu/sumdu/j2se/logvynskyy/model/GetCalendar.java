@@ -14,24 +14,26 @@ import java.util.*;
 
 public class GetCalendar implements Action{
     private static final Logger logger = Logger.getLogger(GetCalendar.class);
+
     @Override
     public View perform() {
         Map<LocalDateTime, Set<Task>> calendar =  Tasks.calendar(ArrayTaskList.getList(),
                 (LocalDateTime) DataFactory.getData(DataType.START_TIME),
                 (LocalDateTime) DataFactory.getData(DataType.END_TIME));
+        StringBuilder calendarAsString = new StringBuilder();
 
-//        Map<LocalDateTime, Set<Task>> calendar =  Tasks.calendar(ArrayTaskList.getList(),
-//                LocalDateTime.now().minusDays(20),
-//                LocalDateTime.now());
+        if(calendar.size() == 0)
+            return new CalendarMessage("У цей час немає жодної події");
 
-        StringBuilder calendarAsString = new StringBuilder("{");
-        for (LocalDateTime key : calendar.keySet()) {
-            calendarAsString.append("У дату - ").append(key.toString()).append(" відбулися події\r\n");
-            Tasks[] tasks = (Tasks[]) calendar.values().toArray();
-            for (Tasks task : tasks)
-                calendarAsString.append(task).append(", ");
+        for (LocalDateTime date : calendar.keySet()) {
+            calendarAsString.append("\nУ дату - ").append(date.toLocalDate()).append(" з часом ")
+                    .append(date.toLocalTime()).append(" відбулася подія");
+            Set<Task> tasks = calendar.get(date);
+            for (Task task : tasks) {
+                calendarAsString.append(" ").append(task.getTitle()).append(",");
+            }
+            calendarAsString.deleteCharAt(calendarAsString.lastIndexOf(","));
         }
-//        calendarAsString.delete(calendarAsString.lastIndexOf(","), calendarAsString.lastIndexOf(" ") + 1);
 
         logger.info("Formed a calendar of tasks in two given dates");
         return new CalendarMessage(calendarAsString.toString());
