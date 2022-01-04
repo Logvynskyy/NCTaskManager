@@ -21,14 +21,15 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
     private int size = 10;
     private Task[] taskList = new Task[size];
 
-    private static ArrayTaskList tasks = new ArrayTaskList();
+    private static ArrayTaskList tasks;// = new ArrayTaskList();
 
     private ArrayTaskList() {}
 
     public static ArrayTaskList getList() {
-        if(tasks.size() == 0) {
+        if(tasks == null) {
+            tasks = new ArrayTaskList();
             try {
-                tasks = new ArrayTaskList();
+//                tasks = new ArrayTaskList();
                 TaskIO.read(tasks, new FileReader("data.json"));
             } catch (FileNotFoundException e) {
                 logger.error(e.getMessage());

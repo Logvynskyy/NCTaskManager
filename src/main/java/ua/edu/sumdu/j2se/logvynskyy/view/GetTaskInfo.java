@@ -15,12 +15,12 @@ public class GetTaskInfo {
     }
 
     public boolean isRepeated(){
-        System.out.print("Чи повторюване буде завдання (1 - так, все інше - ні): ");
+        System.out.print("Чи повторюване буде завдання (1 - так, 0 - ні): ");
         return scanner.nextInt() == 1;
     }
 
     public boolean isActive(){
-        System.out.print("Чи активним буде завдання (1 - так, все інше - ні): ");
+        System.out.print("Чи активним буде завдання (1 - так, 0 - ні): ");
         return scanner.nextInt() == 1;
     }
 

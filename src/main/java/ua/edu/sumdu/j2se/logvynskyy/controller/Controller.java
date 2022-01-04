@@ -15,6 +15,9 @@ public class Controller {
             controller = new Controller();
         }
         logger.info("The program has started. Controller created");
+        Notificator notificator = new Notificator();
+        notificator.setDaemon(true);
+        notificator.start();
         return controller;
     }
 
@@ -25,10 +28,6 @@ public class Controller {
             throw new IllegalArgumentException("Введіть коректний номер задачі!");
         }
         Menu menu = Menu.getMenu();
-        Notificator notificator = new Notificator();
-        notificator.setDaemon(true);
-        notificator.start();
-
         Action action = menu.getAction(num);
         View page = action.perform();
         logger.info("Performed an action №" + num + " and returned View " + page.getClass().getSimpleName());

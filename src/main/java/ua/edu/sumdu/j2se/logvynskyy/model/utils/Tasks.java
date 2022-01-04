@@ -3,6 +3,7 @@ package ua.edu.sumdu.j2se.logvynskyy.model.utils;
 import ua.edu.sumdu.j2se.logvynskyy.model.entities.Task;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.StreamSupport;
 
@@ -26,9 +27,10 @@ public class Tasks {
 
         SortedMap<LocalDateTime, Set<Task>> calendar = new TreeMap<>();
         Iterable<Task> incomingTasks = incoming(tasks, start, end);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
 
         for (Task incomingTask : incomingTasks) {
-            LocalDateTime nextTaskDate = incomingTask.nextTimeAfter(start);
+            LocalDateTime nextTaskDate = LocalDateTime.parse(incomingTask.nextTimeAfter(start).format(formatter));
             while (!nextTaskDate.isAfter(end)) {
                 if (calendar.containsKey(nextTaskDate))
                     calendar.get(nextTaskDate).add(incomingTask);
