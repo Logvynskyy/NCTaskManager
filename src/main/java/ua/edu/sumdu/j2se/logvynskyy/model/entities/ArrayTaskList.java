@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.ListTypes;
 import ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
@@ -32,7 +33,8 @@ public class ArrayTaskList extends AbstractTaskList implements Cloneable{
                 TaskIO.read(tasks, new FileReader("data.json"));
             } catch (FileNotFoundException e) {
                 logger.error(e.getMessage());
-                System.out.println("Не знайдено файлу з завданнями");
+                File data = new File("data.json");
+                logger.info("Created file for storing tasks");
             }
         }
         logger.info("Returned an array of tasks");
