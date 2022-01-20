@@ -1,4 +1,6 @@
-package ua.edu.sumdu.j2se.logvynskyy.tasks;
+package ua.edu.sumdu.j2se.logvynskyy.model.utils;
+
+import ua.edu.sumdu.j2se.logvynskyy.model.entities.Task;
 
 import java.time.LocalDateTime;
 import java.util.*;
@@ -27,7 +29,7 @@ public class Tasks {
 
         for (Task incomingTask : incomingTasks) {
             LocalDateTime nextTaskDate = incomingTask.nextTimeAfter(start);
-            while (!nextTaskDate.isAfter(end)) {
+            while (nextTaskDate != null && nextTaskDate.compareTo(end) <= 0) {
                 if (calendar.containsKey(nextTaskDate))
                     calendar.get(nextTaskDate).add(incomingTask);
                 else

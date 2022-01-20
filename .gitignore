@@ -2,3 +2,5 @@
 NCTaskManager.iml
 /target/
 /test.json
+/data.json
+/logs/

@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.logvynskyy.tasks;
+package ua.edu.sumdu.j2se.logvynskyy.model.entities;
 
 import java.io.Serializable;
 import java.util.*;
@@ -24,7 +24,7 @@ public class Task implements Cloneable, Serializable {
      * @param time - час виконання
      */
     public Task(String title, LocalDateTime time) throws IllegalArgumentException{
-        if(time == null || time.isBefore(LocalDateTime.now().minusDays(1))) throw new IllegalArgumentException("Час не може бути меншим нуля!");
+        if(time == null) throw new IllegalArgumentException("Час не може бути меншим нуля!");
         if(title.isBlank() || title.isEmpty()) throw new IllegalArgumentException("Назва не може бути пустою!");
         this.title = title;
         this.time = time;
@@ -142,7 +142,7 @@ public class Task implements Cloneable, Serializable {
      * Задача вважається неповторюваною якщо інтервал її виконання дорівнює 0
      * @return - повторювана задача чи ні
      */
-    boolean isRepeated(){
+    public boolean isRepeated(){
         return interval != 0;
     }
 
@@ -188,19 +188,16 @@ public class Task implements Cloneable, Serializable {
     @Override
     public String toString() {
         if(!isRepeated())
-            return "Task{" +
-                    "title = '" + title + '\'' +
-                    ", isRepeated = " + isRepeated() +
-                    ", time = " + time.toString() +
-                    '}';
+            return "Назва - " + title +
+                    ", неповторювана" +
+                    ", час виконання - " + time.toString() +
+                    ", чи активна - " + isActive;
         else
-            return "Task{" +
-                    "title='" + title + '\'' +
-                    ", isRepeated = " + isRepeated() +
-                    ", start = " + start.toString() +
-                    ", end = " + end.toString() +
-                    ", interval = " + interval +
-                    ", isActive = " + isActive +
-                    '}';
+            return "Назва - " + title +
+                    ", повторювана " +
+                    ", час початку - " + start.toString() +
+                    ", час закінчення - " + end.toString() +
+                    ", інтервал - " + interval + " секунд" +
+                    ", чи активна - " + isActive;
     }
 }

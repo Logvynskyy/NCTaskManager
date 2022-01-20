@@ -1,7 +1,9 @@
-package ua.edu.sumdu.j2se.logvynskyy.tasks;
+package ua.edu.sumdu.j2se.logvynskyy.model.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList;
+import ua.edu.sumdu.j2se.logvynskyy.model.entities.Task;
 
 import java.io.*;
 import java.time.LocalDateTime;

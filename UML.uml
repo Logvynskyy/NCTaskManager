@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ua.edu.sumdu.j2se.logvynskyy.model.Exit</OriginalElement>
+  <nodes>
+    <node x="1479.7687238218882" y="1902.0">ua.edu.sumdu.j2se.logvynskyy.model.Exit</node>
+    <node x="330.7455095361739" y="627.0">ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList</node>
+    <node x="1100.7687238218882" y="2060.0">ua.edu.sumdu.j2se.logvynskyy.controller.Menu</node>
+    <node x="392.0937238218882" y="1216.0">ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList</node>
+    <node x="772.0937238218883" y="883.0">ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType</node>
+    <node x="986.7687238218882" y="1902.0">ua.edu.sumdu.j2se.logvynskyy.model.GetInfo</node>
+    <node x="1190.1110108421817" y="982.5">ua.edu.sumdu.j2se.logvynskyy.view.View</node>
+    <node x="1112.7687238218882" y="2253.0">ua.edu.sumdu.j2se.logvynskyy.controller.Controller</node>
+    <node x="1136.7687238218882" y="1902.0">ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar</node>
+    <node x="1218.5187238218882" y="1381.5">ua.edu.sumdu.j2se.logvynskyy.model.Action</node>
+    <node x="659.8312238218882" y="1902.0">ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask</node>
+    <node x="836.7687238218882" y="1902.0">ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask</node>
+    <node x="1348.1298349329995" y="682.0">ua.edu.sumdu.j2se.logvynskyy.model.utils.Tasks</node>
+    <node x="180.59361563190657" y="1891.0">ua.edu.sumdu.j2se.logvynskyy.controller.Notificator</node>
+    <node x="507.8401775088485" y="0.0">ua.edu.sumdu.j2se.logvynskyy.model.entities.Task</node>
+    <node x="463.9687238218882" y="1902.0">ua.edu.sumdu.j2se.logvynskyy.model.AddTask</node>
+    <node x="31.031223821888148" y="905.5">ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO</node>
+    <node x="741.3312238218882" y="1370.0">ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory</node>
+    <node x="1329.7687238218882" y="1902.0">ua.edu.sumdu.j2se.logvynskyy.model.Help</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="-63.66666666666663" y="-38.5" />
+      <point x="773.1645571552217" y="1176.0" />
+      <point x="761.5937238218883" y="1176.0" />
+      <point x="761.5937238218883" y="577.0" />
+      <point x="711.1863313550025" y="577.0" />
+      <point x="47.846153846153925" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO">
+      <point x="-77.19999999999993" y="-192.5" />
+      <point x="411.3937238218883" y="1196.0" />
+      <point x="272.53122382188815" y="1196.0" />
+      <point x="103.5" y="104.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList">
+      <point x="-24.375" y="-38.5" />
+      <point x="504.5937238218882" y="1841.0" />
+      <point x="328.5312238218882" y="1841.0" />
+      <point x="328.5312238218882" y="853.0" />
+      <point x="399.6740809647454" y="853.0" />
+      <point x="-27.571428571428555" y="93.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Notificator" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="-58.66666666666663" y="-49.5" />
+      <point x="209.92694896523994" y="1871.0" />
+      <point x="0.0" y="1871.0" />
+      <point x="0.0" y="567.0" />
+      <point x="519.801715970387" y="567.0" />
+      <point x="-143.53846153846155" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.Exit" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="32.5" y="-38.5" />
+      <point x="1577.2687238218882" y="1186.0" />
+      <point x="1313.4443441755152" y="1186.0" />
+      <point x="49.33333333333326" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Controller" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="36.799999999999955" y="-60.5" />
+      <point x="1241.5687238218882" y="2223.0" />
+      <point x="1319.2687238218882" y="2223.0" />
+      <point x="1319.2687238218882" y="1851.0" />
+      <point x="1316.0187238218882" y="1851.0" />
+      <point x="32.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.Tasks">
+      <point x="38.85714285714289" y="-38.5" />
+      <point x="1243.625866679031" y="1861.0" />
+      <point x="1635.1298349329995" y="1861.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Notificator" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList">
+      <point x="58.666666666666686" y="-49.5" />
+      <point x="327.26028229857326" y="1871.0" />
+      <point x="408.1770571552216" y="1871.0" />
+      <point x="-80.41666666666663" y="192.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="40.625" y="-38.5" />
+      <point x="942.3937238218882" y="1791.0" />
+      <point x="1072.6680634766078" y="1791.0" />
+      <point x="1072.6680634766078" y="1176.0" />
+      <point x="1231.222121953293" y="1176.0" />
+      <point x="-32.888888888888914" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList">
+      <point x="-40.625" y="-38.5" />
+      <point x="861.1437238218882" y="1691.0" />
+      <point x="504.6770571552216" y="1691.0" />
+      <point x="16.08333333333337" y="192.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList">
+      <point x="-37.14285714285711" y="-38.5" />
+      <point x="687.6883666790311" y="1721.0" />
+      <point x="339.5312238218882" y="1721.0" />
+      <point x="339.5312238218882" y="863.0" />
+      <point x="427.2455095361739" y="863.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="56.875" y="-38.5" />
+      <point x="958.6437238218882" y="1831.0" />
+      <point x="1251.0187238218882" y="1831.0" />
+      <point x="-32.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.Help">
+      <point x="69.33333333333326" y="-71.5" />
+      <point x="1274.1020571552215" y="2030.0" />
+      <point x="1394.7687238218882" y="2030.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.Exit" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="-32.5" y="-38.5" />
+      <point x="1512.2687238218882" y="1841.0" />
+      <point x="1342.0187238218882" y="1841.0" />
+      <point x="58.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="19.42857142857133" y="-38.5" />
+      <point x="1224.1972952504595" y="1851.0" />
+      <point x="1277.0187238218882" y="1851.0" />
+      <point x="-6.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="0.0" y="-38.5" />
+      <point x="1204.7687238218882" y="1196.0" />
+      <point x="1264.1110108421817" y="1196.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="-92.0" y="-104.0" />
+      <point x="77.03122382188815" y="863.0" />
+      <point x="109.09361563190657" y="863.0" />
+      <point x="109.09361563190657" y="587.0" />
+      <point x="567.6478698165408" y="587.0" />
+      <point x="-95.69230769230774" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask" target="ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory">
+      <point x="18.571428571428555" y="-38.5" />
+      <point x="743.4026523933168" y="1761.0" />
+      <point x="812.9562238218882" y="1761.0" />
+      <point x="-23.875" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetInfo" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList">
+      <point x="-16.25" y="-38.5" />
+      <point x="1035.5187238218882" y="1651.0" />
+      <point x="606.5937238218883" y="1651.0" />
+      <point x="606.5937238218883" y="853.0" />
+      <point x="509.95979525045965" y="853.0" />
+      <point x="82.71428571428572" y="93.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="0.0" y="-93.0" />
+      <point x="427.2455095361739" y="607.0" />
+      <point x="615.4940236626946" y="607.0" />
+      <point x="-47.846153846153925" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetInfo" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="16.25" y="-38.5" />
+      <point x="1068.0187238218882" y="1801.0" />
+      <point x="1092.9319523654967" y="1801.0" />
+      <point x="1092.9319523654967" y="1186.0" />
+      <point x="1247.6665663977374" y="1186.0" />
+      <point x="-16.444444444444343" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetInfo" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="48.75" y="-38.5" />
+      <point x="1100.5187238218882" y="1841.0" />
+      <point x="1264.0187238218882" y="1841.0" />
+      <point x="-19.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO">
+      <point x="-40.625" y="-38.5" />
+      <point x="488.3437238218882" y="1851.0" />
+      <point x="132.59361563190657" y="1851.0" />
+      <point x="132.59361563190657" y="1196.0" />
+      <point x="65.53122382188815" y="1196.0" />
+      <point x="-103.5" y="104.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Controller" target="ua.edu.sumdu.j2se.logvynskyy.controller.Menu">
+      <point x="0.0" y="-60.5" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="0.0" y="-192.5" />
+      <point x="488.5937238218882" y="1156.0" />
+      <point x="728.5937238218883" y="1156.0" />
+      <point x="728.5937238218883" y="607.0" />
+      <point x="639.4171005857715" y="607.0" />
+      <point x="-23.923076923076906" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory">
+      <point x="-8.125" y="-38.5" />
+      <point x="893.6437238218882" y="1671.0" />
+      <point x="860.7062238218882" y="1671.0" />
+      <point x="23.875" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="-56.875" y="-38.5" />
+      <point x="472.0937238218882" y="1861.0" />
+      <point x="20.531223821888148" y="1861.0" />
+      <point x="20.531223821888148" y="577.0" />
+      <point x="543.7247928934639" y="577.0" />
+      <point x="-119.61538461538464" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.Exit">
+      <point x="92.44444444444434" y="-71.5" />
+      <point x="1297.2131682663326" y="2040.0" />
+      <point x="1544.7687238218882" y="2040.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Notificator" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList">
+      <point x="0.0" y="-49.5" />
+      <point x="268.5936156319066" y="1871.0" />
+      <point x="317.53122382188815" y="1871.0" />
+      <point x="317.53122382188815" y="843.0" />
+      <point x="372.10265239331676" y="843.0" />
+      <point x="-55.14285714285717" y="93.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="55.71428571428578" y="-38.5" />
+      <point x="780.545509536174" y="1821.0" />
+      <point x="1238.0187238218882" y="1821.0" />
+      <point x="-45.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.utils.Tasks" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="-2.2737367544323206E-13" y="-38.0" />
+      <point x="1635.129834932999" y="547.0" />
+      <point x="782.9555621242332" y="547.0" />
+      <point x="119.61538461538464" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType">
+      <point x="8.125" y="-38.5" />
+      <point x="909.8937238218882" y="1751.0" />
+      <point x="942.8312238218882" y="1751.0" />
+      <point x="942.8312238218882" y="1186.0" />
+      <point x="898.7937238218883" y="1186.0" />
+      <point x="36.200000000000045" y="126.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList">
+      <point x="-18.571428571428555" y="-38.5" />
+      <point x="706.2597952504597" y="1711.0" />
+      <point x="472.51039048855483" y="1711.0" />
+      <point x="-16.08333333333337" y="192.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar" target="ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory">
+      <point x="-38.85714285714289" y="-38.5" />
+      <point x="1165.9115809647453" y="1631.0" />
+      <point x="908.4562238218882" y="1631.0" />
+      <point x="71.625" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="23.111111111111086" y="-71.5" />
+      <point x="1227.8798349329993" y="2010.0" />
+      <point x="1292.0187238218882" y="2010.0" />
+      <point x="1292.0187238218882" y="1851.0" />
+      <point x="1290.0187238218882" y="1851.0" />
+      <point x="6.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.GetInfo">
+      <point x="-23.111111111111086" y="-71.5" />
+      <point x="1181.6576127107771" y="2010.0" />
+      <point x="1051.7687238218882" y="2010.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask">
+      <point x="-46.22222222222217" y="-71.5" />
+      <point x="1158.546501599666" y="2020.0" />
+      <point x="901.7687238218882" y="2020.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetInfo" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList">
+      <point x="-48.75" y="-38.5" />
+      <point x="1003.0187238218882" y="1661.0" />
+      <point x="536.8437238218883" y="1661.0" />
+      <point x="48.25" y="192.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="37.14285714285711" y="-38.5" />
+      <point x="761.9740809647453" y="1781.0" />
+      <point x="1036.7548349329993" y="1781.0" />
+      <point x="1036.7548349329993" y="1166.0" />
+      <point x="1214.7776775088487" y="1166.0" />
+      <point x="-49.33333333333326" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList">
+      <point x="-24.375" y="-38.5" />
+      <point x="877.3937238218882" y="1681.0" />
+      <point x="595.5937238218883" y="1681.0" />
+      <point x="595.5937238218883" y="863.0" />
+      <point x="482.38836667903104" y="863.0" />
+      <point x="55.14285714285711" y="93.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList">
+      <point x="-58.28571428571422" y="-38.5" />
+      <point x="1146.483009536174" y="1641.0" />
+      <point x="569.0103904885548" y="1641.0" />
+      <point x="80.41666666666663" y="192.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Controller" target="ua.edu.sumdu.j2se.logvynskyy.controller.Notificator">
+      <point x="-36.799999999999955" y="-60.5" />
+      <point x="1167.9687238218883" y="2223.0" />
+      <point x="308.89521085454624" y="2223.0" />
+      <point x="308.89521085454624" y="2040.0" />
+      <point x="312.5936156319066" y="2040.0" />
+      <point x="44.0" y="49.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="58.28571428571422" y="-38.5" />
+      <point x="1263.0544381076024" y="1871.0" />
+      <point x="1932.6298349329995" y="1871.0" />
+      <point x="1932.6298349329995" y="537.0" />
+      <point x="806.8786390473101" y="537.0" />
+      <point x="143.53846153846155" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType">
+      <point x="0.0" y="-38.5" />
+      <point x="724.8312238218882" y="1196.0" />
+      <point x="826.3937238218882" y="1196.0" />
+      <point x="-36.200000000000045" y="126.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.GetCalendar" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType">
+      <point x="-19.42857142857133" y="-38.5" />
+      <point x="1185.3401523933169" y="1621.0" />
+      <point x="985.5937238218883" y="1621.0" />
+      <point x="985.5937238218883" y="1176.0" />
+      <point x="934.9937238218882" y="1176.0" />
+      <point x="72.39999999999998" y="126.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList">
+      <point x="92.0" y="-104.0" />
+      <point x="261.03122382188815" y="833.0" />
+      <point x="344.5312238218882" y="833.0" />
+      <point x="-82.71428571428572" y="93.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.AddTask">
+      <point x="-92.44444444444457" y="-71.5" />
+      <point x="1112.3242793774436" y="2040.0" />
+      <point x="528.9687238218883" y="2040.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType">
+      <point x="8.125" y="-38.5" />
+      <point x="537.0937238218883" y="1741.0" />
+      <point x="661.4243775212128" y="1741.0" />
+      <point x="661.4243775212128" y="1186.0" />
+      <point x="790.1937238218883" y="1186.0" />
+      <point x="-72.39999999999998" y="126.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory">
+      <point x="24.375" y="-38.5" />
+      <point x="553.3437238218883" y="1751.0" />
+      <point x="765.2062238218882" y="1751.0" />
+      <point x="-71.625" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.Help" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="-32.5" y="-38.5" />
+      <point x="1362.2687238218882" y="1851.0" />
+      <point x="1329.0187238218882" y="1851.0" />
+      <point x="45.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="40.625" y="-38.5" />
+      <point x="569.5937238218883" y="1771.0" />
+      <point x="1025.7548349329993" y="1771.0" />
+      <point x="1025.7548349329993" y="1156.0" />
+      <point x="1198.3332330644039" y="1156.0" />
+      <point x="-65.77777777777783" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO">
+      <point x="-55.714285714285666" y="-38.5" />
+      <point x="669.1169381076026" y="1731.0" />
+      <point x="143.59361563190657" y="1731.0" />
+      <point x="143.59361563190657" y="1186.0" />
+      <point x="134.53122382188815" y="1186.0" />
+      <point x="-34.5" y="104.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.model.Action">
+      <point x="56.875" y="-38.5" />
+      <point x="585.8437238218883" y="1811.0" />
+      <point x="1225.0187238218882" y="1811.0" />
+      <point x="-58.5" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.Help" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="32.5" y="-38.5" />
+      <point x="1427.2687238218882" y="1196.0" />
+      <point x="1296.9998997310709" y="1196.0" />
+      <point x="32.888888888888914" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.Task">
+      <point x="24.375" y="-38.5" />
+      <point x="926.1437238218882" y="1761.0" />
+      <point x="1010.8937238218882" y="1761.0" />
+      <point x="1010.8937238218882" y="557.0" />
+      <point x="759.0324852011563" y="557.0" />
+      <point x="95.69230769230774" y="258.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.Action" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="0.0" y="-27.0" />
+      <point x="1283.5187238218882" y="1196.0" />
+      <point x="1280.555455286626" y="1196.0" />
+      <point x="16.444444444444343" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.AbstractTaskList">
+      <point x="-38.599999999999966" y="-192.5" />
+      <point x="449.99372382188824" y="1196.0" />
+      <point x="446.5312238218882" y="1196.0" />
+      <point x="446.5312238218882" y="863.0" />
+      <point x="454.8169381076025" y="863.0" />
+      <point x="27.571428571428555" y="93.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.ChangeTask" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.TaskIO">
+      <point x="-56.875" y="-38.5" />
+      <point x="844.8937238218882" y="1701.0" />
+      <point x="154.59361563190657" y="1701.0" />
+      <point x="154.59361563190657" y="1196.0" />
+      <point x="203.53122382188815" y="1196.0" />
+      <point x="34.5" y="104.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Controller" target="ua.edu.sumdu.j2se.logvynskyy.view.View">
+      <point x="73.59999999999991" y="-60.5" />
+      <point x="1278.3687238218881" y="2233.0" />
+      <point x="1620.2687238218882" y="2233.0" />
+      <point x="1620.2687238218882" y="1176.0" />
+      <point x="1329.8887886199595" y="1176.0" />
+      <point x="65.77777777777783" y="27.0" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.Menu" target="ua.edu.sumdu.j2se.logvynskyy.model.DeleteTask">
+      <point x="-69.33333333333326" y="-71.5" />
+      <point x="1135.435390488555" y="2030.0" />
+      <point x="724.8312238218882" y="2030.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.model.AddTask" target="ua.edu.sumdu.j2se.logvynskyy.model.entities.ArrayTaskList">
+      <point x="-8.125" y="-38.5" />
+      <point x="520.8437238218883" y="1831.0" />
+      <point x="440.3437238218882" y="1831.0" />
+      <point x="-48.25" y="192.5" />
+    </edge>
+    <edge source="ua.edu.sumdu.j2se.logvynskyy.controller.DataFactory" target="ua.edu.sumdu.j2se.logvynskyy.model.utils.DataType">
+      <point x="0.0" y="-38.5" />
+      <point x="836.8312238218882" y="1196.0" />
+      <point x="862.5937238218883" y="1196.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7519744264761189" x="549.752175196161" y="1798.5946658992357" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
